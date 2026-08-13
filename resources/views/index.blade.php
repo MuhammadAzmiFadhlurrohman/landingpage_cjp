@@ -250,58 +250,58 @@
 </head>
 <body class="font-sans text-[15px] leading-relaxed antialiased text-[color:var(--ink)]">
 
-    <!-- Sticky Navbar dengan Blur Glassmorphism -->
+    <!-- Sticky Navbar dengan Blur Glassmorphism Semi-Dark Adaptive -->
     <nav x-data="{ scrolled: false, mobileMenuOpen: false }"
          @scroll.window="scrolled = (window.pageYOffset > 20)"
-         :class="{ 'bg-white/90 backdrop-blur-lg shadow-md py-3 border-b border-sky-100/80': scrolled, 'bg-transparent py-5': !scrolled }"
+         :class="{ 'bg-white/95 backdrop-blur-xl shadow-md py-3 border-b border-sky-100/80 text-[color:var(--ink)]': scrolled, 'bg-[#071626]/80 backdrop-blur-xl py-4 border-b border-white/10 text-white': !scrolled }"
          class="fixed w-full top-0 z-50 transition-all duration-500">
         <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
             
             <!-- Logo Branding (Hanya Gambar Logo) -->
             <a href="#beranda" class="flex items-center gap-3 group">
-                <img src="{{ asset('assets/cjp.png') }}" alt="Logo CJP" class="h-7 sm:h-9 md:h-10 w-auto max-w-[130px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300">
+                <img src="{{ asset('assets/cjp.png') }}" alt="Logo CJP" class="h-8 sm:h-9 md:h-10 w-auto max-w-[140px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300">
             </a>
 
             <!-- Desktop Menu Navigation -->
             <div class="hidden md:flex space-x-6 items-center font-semibold text-sm">
-                <a href="#beranda" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
+                <a href="#beranda" :class="scrolled ? 'text-gray-700 hover:text-[color:var(--sky-deep)]' : 'text-gray-200 hover:text-sky-300'" class="transition py-1 relative group">
                     Beranda
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-teal-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#tentang" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
+                <a href="#tentang" :class="scrolled ? 'text-gray-700 hover:text-[color:var(--sky-deep)]' : 'text-gray-200 hover:text-sky-300'" class="transition py-1 relative group">
                     Tentang Kami
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-teal-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#produk" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
+                <a href="#produk" :class="scrolled ? 'text-gray-700 hover:text-[color:var(--sky-deep)]' : 'text-gray-200 hover:text-sky-300'" class="transition py-1 relative group">
                     Produk
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-teal-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#portofolio" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
+                <a href="#portofolio" :class="scrolled ? 'text-gray-700 hover:text-[color:var(--sky-deep)]' : 'text-gray-200 hover:text-sky-300'" class="transition py-1 relative group">
                     Portofolio
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-teal-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#klien" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
+                <a href="#klien" :class="scrolled ? 'text-gray-700 hover:text-[color:var(--sky-deep)]' : 'text-gray-200 hover:text-sky-300'" class="transition py-1 relative group">
                     Klien
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-teal-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#faq" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
+                <a href="#faq" :class="scrolled ? 'text-gray-700 hover:text-[color:var(--sky-deep)]' : 'text-gray-200 hover:text-sky-300'" class="transition py-1 relative group">
                     FAQ
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-teal-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#lokasi" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
+                <a href="#lokasi" :class="scrolled ? 'text-gray-700 hover:text-[color:var(--sky-deep)]' : 'text-gray-200 hover:text-sky-300'" class="transition py-1 relative group">
                     Lokasi
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-teal-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
 
                 <!-- Direct WhatsApp Button -->
-                <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="btn-glow bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-5 py-2.5 rounded-full shadow-md font-bold text-xs tracking-wide flex items-center gap-2 hover:scale-105 active:scale-95 transition-all">
+                <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="btn-glow bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-5 py-2.5 rounded-full shadow-lg font-bold text-xs tracking-wide flex items-center gap-2 hover:scale-105 active:scale-95 transition-all">
                     <i class="fa-brands fa-whatsapp text-base"></i>
                     <span>WhatsApp</span>
                 </a>
             </div>
 
             <!-- Mobile Menu Toggle Button -->
-            <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2.5 rounded-xl bg-white/90 border border-sky-100 text-[color:var(--ink)] shadow-sm focus:outline-none transition active:scale-95">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" :class="scrolled ? 'bg-white border-sky-100 text-gray-800' : 'bg-white/10 border-white/20 text-white'" class="md:hidden p-2.5 rounded-xl border shadow-sm focus:outline-none transition active:scale-95">
                 <svg class="w-6 h-6 transition-transform duration-300" :class="{'rotate-90': mobileMenuOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path x-show="!mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     <path x-show="mobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -310,7 +310,7 @@
         </div>
 
         <!-- Mobile Drawer Menu -->
-        <div x-show="mobileMenuOpen" x-collapse class="md:hidden mx-4 mt-3 rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl ring-1 ring-sky-100 overflow-hidden">
+        <div x-show="mobileMenuOpen" x-collapse class="md:hidden mx-4 mt-3 rounded-2xl bg-white/95 backdrop-blur-xl shadow-2xl ring-1 ring-sky-100 overflow-hidden text-[color:var(--ink)]">
             <div class="h-1 w-full" style="background: linear-gradient(90deg, var(--sky), var(--teal));"></div>
 
             <div class="flex flex-col px-4 py-4 space-y-1">
@@ -367,92 +367,143 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="beranda" class="relative bg-gradient-hero pt-28 pb-16 md:pt-32 md:pb-20 px-6 overflow-hidden">
+    <!-- Semi-Dark Elegant Responsive Jumbotron / Hero Section -->
+    <section id="beranda" class="relative pt-32 pb-20 md:pt-40 md:pb-28 px-6 overflow-hidden border-b border-sky-900/50" style="background: linear-gradient(135deg, #071626 0%, #0B2446 45%, #113866 80%, #081B30 100%);">
         
-        <!-- Ambient Decorative Lighting Glows -->
-        <div class="absolute -top-24 left-1/4 w-[500px] h-[500px] bg-[color:var(--sky)]/15 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-[color:var(--teal)]/15 rounded-full blur-[100px] pointer-events-none"></div>
+        <!-- Subtle Animated Grid Pattern Overlay -->
+        <div class="absolute inset-0 pointer-events-none opacity-20" style="background-image: radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 1px); background-size: 28px 28px;"></div>
 
-        <!-- Animated Background Pulse Motif -->
-        <div class="hidden lg:block absolute -top-10 right-20 w-96 h-96 signal-rings pointer-events-none opacity-60">
-            <div class="ring"></div>
-            <div class="ring"></div>
-            <div class="ring"></div>
-        </div>
+        <!-- Ambient Decorative Lighting Glow Orbs -->
+        <div class="absolute -top-32 left-1/4 w-[500px] h-[500px] bg-sky-500/20 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[450px] h-[450px] bg-teal-400/20 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div class="container mx-auto max-w-6xl relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
                 
                 <!-- Hero Text Content (Left 7 Cols) -->
                 <div class="lg:col-span-7 text-center lg:text-left">
                     
-                    <!-- Live Status Badge -->
-                    <div class="reveal active inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-bold bg-white/90 border border-sky-200/80 text-[color:var(--sky-deep)] shadow-xs mb-6 float-slow">
+                    <!-- Official Live Badge -->
+                    <div class="reveal active inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-bold bg-white/10 backdrop-blur-md border border-white/20 text-sky-300 shadow-lg mb-6 float-slow">
                         <span class="relative flex h-2.5 w-2.5">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
                         </span>
-                        <span>Jaringan Dedicated & Private Network — SLA 99.9%</span>
+                        <span>Anggota Tetap APJATEL Resmi — Bandung, Jawa Barat</span>
                     </div>
 
                     <!-- Main Headline -->
-                    <h1 class="reveal active delay-100 font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[color:var(--ink)] mb-5 leading-tight tracking-tight">
-                        Koneksi Internet <br class="hidden sm:inline">
-                        <span class="bg-gradient-to-r from-[color:var(--sky)] via-[color:var(--sky-deep)] to-[color:var(--teal)] bg-clip-text text-transparent">Dedicated & Ultra Stabil</span> <br class="hidden sm:inline">
-                        Untuk Bisnis & Personal
+                    <h1 class="reveal active delay-100 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-tight">
+                        Solusi Jaringan & <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-sky-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Infrastruktur Telekomunikasi</span> <br class="hidden sm:inline">
+                        Handal di Indonesia
                     </h1>
 
                     <!-- Subtitle Description -->
-                    <p class="reveal active delay-200 text-sm sm:text-base text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                        Solusi Private Network & Jaringan Lastmile berkecepatan tinggi dengan rasio dedicated 1:1, garansi Uptime 99.9%, serta pengawasan jaringan 24/7 nonstop.
+                    <p class="reveal active delay-200 text-sm sm:text-base text-sky-100/90 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                        PT Connecti Jelajah Priangan (CJP) melayani pemasangan perangkat jaringan (site installation), pemetaan lokasi telekomunikasi, dan administrasi perizinan proyek dengan garansi kualitas & kehandalan terbaik.
                     </p>
 
                     <!-- Buttons CTA -->
                     <div class="reveal active delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
-                        <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="btn-glow bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 text-white px-7 py-3.5 rounded-full font-bold text-sm shadow-xl flex items-center gap-2.5 hover:scale-105 active:scale-95 transition-all w-full sm:w-auto justify-center">
+                        <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="btn-glow bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 text-white px-8 py-4 rounded-full font-bold text-sm shadow-2xl shadow-emerald-900/40 flex items-center gap-3 hover:scale-105 active:scale-95 transition-all w-full sm:w-auto justify-center">
                             <i class="fa-brands fa-whatsapp text-xl"></i>
                             <span>Konsultasi via WhatsApp</span>
                         </a>
-                        <a href="#produk" class="px-7 py-3.5 rounded-full border border-sky-200 text-[color:var(--ink)] font-bold text-sm bg-white/80 hover:bg-sky-50 hover:border-sky-300 transition duration-300 w-full sm:w-auto text-center shadow-xs">
-                            Katalog Layanan
+                        <a href="#produk" class="px-8 py-4 rounded-full border border-white/25 text-white font-bold text-sm bg-white/10 backdrop-blur-md hover:bg-white/20 hover:border-white/40 transition duration-300 w-full sm:w-auto text-center shadow-md">
+                            Lihat Produk Layanan
                         </a>
                     </div>
+
+                    <!-- 3 Key Features Highlights Bar -->
+                    <div class="reveal active delay-400 flex flex-wrap justify-center lg:justify-start items-center gap-6 pt-6 border-t border-white/15 text-xs font-semibold text-sky-200">
+                        <div class="flex items-center gap-2">
+                            <span class="w-5 h-5 rounded-full bg-emerald-400/20 text-emerald-300 flex items-center justify-center text-[10px] font-bold border border-emerald-400/30">✓</span>
+                            <span>Anggota Tetap APJATEL</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-5 h-5 rounded-full bg-sky-400/20 text-sky-300 flex items-center justify-center text-[10px] font-bold border border-sky-400/30">✓</span>
+                            <span>Berpusat di Bandung, Jabar</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span class="w-5 h-5 rounded-full bg-teal-400/20 text-teal-300 flex items-center justify-center text-[10px] font-bold border border-teal-400/30">✓</span>
+                            <span>Pengawasan NOC 24/7</span>
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- Hero Visual Showcase -->
-                <div class="lg:col-span-5 reveal active delay-200 relative mt-8 lg:mt-0">
-                    <div class="shine-card bg-gradient-to-b from-white via-white/95 to-mist p-6 sm:p-7 rounded-3xl border border-sky-100 shadow-2xl relative z-10 overflow-hidden">
-                        <div class="flex justify-between items-center pb-4 mb-5 border-b border-sky-100">
+                <!-- Hero Visual Network Dashboard Mockup (Right 5 Cols) -->
+                <div class="lg:col-span-5 reveal active delay-200 relative mt-6 lg:mt-0">
+                    
+                    <!-- Ambient Glow Behind Graphic -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-sky-400/20 to-teal-400/20 blur-2xl rounded-3xl pointer-events-none"></div>
+
+                    <!-- Semi-Dark Glassmorphic Card Container -->
+                    <div class="shine-card bg-white/10 backdrop-blur-2xl p-6 sm:p-7 rounded-3xl border border-white/20 text-white shadow-2xl relative z-10 overflow-hidden">
+                        
+                        <!-- Header Bar -->
+                        <div class="flex justify-between items-center pb-4 mb-5 border-b border-white/15">
                             <div class="flex items-center gap-2">
-                                <div class="w-3 h-3 rounded-full bg-rose-400"></div>
-                                <div class="w-3 h-3 rounded-full bg-amber-400"></div>
-                                <div class="w-3 h-3 rounded-full bg-emerald-400"></div>
-                                <span class="text-xs font-bold text-gray-400 ml-2 font-mono">cjp-network-status</span>
+                                <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+                                <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                                <span class="text-xs font-bold text-sky-200 ml-2 font-mono">cjp-network-monitor</span>
                             </div>
-                            <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-700 text-[10px] font-extrabold uppercase tracking-wider flex items-center gap-1.5">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-extrabold uppercase tracking-wider flex items-center gap-1.5">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                                 Live Monitoring
                             </span>
                         </div>
+
+                        <!-- Speed Metrics Display -->
                         <div class="grid grid-cols-2 gap-3.5 mb-5">
-                            <div class="bg-mist p-4 rounded-2xl border border-sky-100/80">
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15">
                                 <div class="flex items-center justify-between mb-1">
-                                    <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400">Download</span>
-                                    <i class="fa-solid fa-arrow-down text-emerald-500 text-xs"></i>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Download</span>
+                                    <i class="fa-solid fa-arrow-down text-emerald-400 text-xs"></i>
                                 </div>
-                                <div class="font-display font-extrabold text-2xl text-[color:var(--ink)]">998.4 <span class="text-xs font-semibold text-gray-500">Mbps</span></div>
+                                <div class="font-display font-extrabold text-2xl text-white">998.4 <span class="text-xs font-semibold text-sky-300">Mbps</span></div>
                             </div>
-                            <div class="bg-mist p-4 rounded-2xl border border-sky-100/80">
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15">
                                 <div class="flex items-center justify-between mb-1">
-                                    <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400">Upload</span>
-                                    <i class="fa-solid fa-arrow-up text-[color:var(--sky-deep)] text-xs"></i>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Upload</span>
+                                    <i class="fa-solid fa-arrow-up text-sky-300 text-xs"></i>
                                 </div>
-                                <div class="font-display font-extrabold text-2xl text-[color:var(--ink)]">998.1 <span class="text-xs font-semibold text-gray-500">Mbps</span></div>
+                                <div class="font-display font-extrabold text-2xl text-white">998.1 <span class="text-xs font-semibold text-sky-300">Mbps</span></div>
                             </div>
                         </div>
+
+                        <!-- Live Signal Wave Graphic -->
+                        <div class="bg-black/30 p-4 rounded-2xl text-white mb-4 border border-white/10">
+                            <div class="flex justify-between items-center text-xs mb-2">
+                                <span class="font-semibold text-sky-200">Latency & Stability</span>
+                                <span class="font-bold text-emerald-400 font-mono">&lt; 1.8 ms (Ultra Low Ping)</span>
+                            </div>
+                            <svg class="w-full h-12" viewBox="0 0 300 50" fill="none">
+                                <path d="M0 30 Q 30 10, 60 30 T 120 20 T 180 35 T 240 15 T 300 25" stroke="#38bdf8" stroke-width="3" fill="none" class="connect-line"/>
+                                <path d="M0 30 Q 30 10, 60 30 T 120 20 T 180 35 T 240 15 T 300 25 L 300 50 L 0 50 Z" fill="url(#semi-dark-hero-grad)" opacity="0.3"/>
+                                <defs>
+                                    <linearGradient id="semi-dark-hero-grad" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#38bdf8"/>
+                                        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <!-- APJATEL Status Badge -->
+                        <div class="flex items-center justify-between text-xs text-sky-100 bg-white/10 p-3 rounded-xl border border-white/15">
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-shield-halved text-emerald-400 text-sm"></i>
+                                <span class="font-bold text-white">Lisensi Resm APJATEL</span>
+                            </div>
+                            <span class="text-[11px] font-extrabold text-emerald-300 uppercase tracking-wider">Certified</span>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
