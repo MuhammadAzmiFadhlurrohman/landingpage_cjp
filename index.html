@@ -62,16 +62,31 @@
             filter: blur(0px) !important;
             z-index: 20;
         }
+        /* Force Centered Swiper Dynamic Pagination Dots */
+        .swiper-pagination-portfolio {
+            position: relative !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            transform: none !important;
+            margin: 0 auto !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            text-align: center !important;
+            width: auto !important;
+        }
         .swiper-pagination-portfolio .swiper-pagination-bullet {
             background: rgba(255, 255, 255, 0.4);
             opacity: 1;
             width: 10px;
             height: 10px;
+            margin: 0 4px !important;
             transition: all 0.3s ease;
         }
         .swiper-pagination-portfolio .swiper-pagination-bullet-active {
             background: var(--sky);
-            width: 28px;
+            width: 26px;
             border-radius: 999px;
             box-shadow: 0 0 10px rgba(41, 171, 226, 0.6);
         }
@@ -251,6 +266,10 @@
             <div class="hidden md:flex space-x-7 items-center font-semibold text-sm">
                 <a href="#beranda" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
                     Beranda
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#tentang" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
+                    Tentang
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#produk" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
@@ -523,8 +542,8 @@
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <div>
-                        <div class="font-display font-extrabold text-xl sm:text-3xl text-[color:var(--ink)]">99.9%</div>
-                        <div class="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider">Garansi Uptime SLA</div>
+                        <div class="font-display font-extrabold text-xl sm:text-3xl text-[color:var(--ink)]">APJATEL</div>
+                        <div class="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider">Anggota Tetap Resmi</div>
                     </div>
                 </div>
 
@@ -539,6 +558,104 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <!-- Section Profil Perusahaan & Layanan Utama (PT CJP) -->
+    <section id="tentang" class="py-20 bg-white px-6 border-t border-sky-100 relative overflow-hidden">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                
+                <!-- Profile Left Description (7 Cols) -->
+                <div class="lg:col-span-7 reveal">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-sky-100/80 text-[color:var(--sky-deep)] border border-sky-200 shadow-2xs mb-4">
+                        <i class="fa-solid fa-building-circle-check text-sky-500"></i>
+                        <span>Profil Perusahaan Resmi</span>
+                    </div>
+
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-[color:var(--ink)] tracking-tight mb-4 leading-tight">
+                        PT Connecti Jelajah Priangan <span class="text-[color:var(--sky-deep)]">(CJP)</span>
+                    </h2>
+
+                    <p class="text-sm sm:text-base text-gray-600 mb-6 leading-relaxed font-medium">
+                        <strong class="text-[color:var(--ink)]">PT Connecti Jelajah Priangan (CJP)</strong> adalah perusahaan swasta berbadan hukum di Indonesia yang berpusat di <strong class="text-[color:var(--ink)]">Bandung, Jawa Barat</strong>. Perusahaan kami bergerak di bidang penyediaan infrastruktur telekomunikasi, instalasi perangkat jaringan, serta utilitas pendukung komunikasi.
+                    </p>
+
+                    <!-- APJATEL Official Membership Highlight Card -->
+                    <div class="p-5 rounded-2xl bg-gradient-to-r from-sky-50 via-mist to-white border border-sky-200/90 shadow-sm flex items-start gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-[color:var(--sky-deep)] text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-display font-extrabold text-sm text-[color:var(--ink)]">Anggota Tetap APJATEL</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-emerald-100 text-emerald-700 uppercase">Terdaftar Resmi</span>
+                            </div>
+                            <p class="text-xs text-gray-600 leading-relaxed font-medium">
+                                Terdaftar resmi sebagai anggota tetap <strong class="text-gray-800">APJATEL (Asosiasi Penyelenggara Jaringan Telekomunikasi)</strong>, menjamin standar perizinan, kehandalan jaringan, dan regulasi telekomunikasi nasional.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3 Scope of Services List -->
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-mist border border-sky-100/80">
+                            <span class="w-7 h-7 rounded-lg bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <h4 class="font-bold text-xs text-[color:var(--ink)] uppercase tracking-wider">Site Installation & Pemetaan Perangkat</h4>
+                                <p class="text-xs text-gray-600 font-medium">Pemasangan dan pemetaan lokasi perangkat jaringan telekomunikasi serta utilitas pendukung komunikasi.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-mist border border-sky-100/80">
+                            <span class="w-7 h-7 rounded-lg bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <h4 class="font-bold text-xs text-[color:var(--ink)] uppercase tracking-wider">Pengelolaan Administrasi & Perizinan Proyek</h4>
+                                <p class="text-xs text-gray-600 font-medium">Pengelolaan administrasi proyek infrastruktur telekomunikasi dan perizinan kerja sama.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-mist border border-sky-100/80">
+                            <span class="w-7 h-7 rounded-lg bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">✓</span>
+                            <div>
+                                <h4 class="font-bold text-xs text-[color:var(--ink)] uppercase tracking-wider">Kemitraan Jaringan Regional Jawa Barat</h4>
+                                <p class="text-xs text-gray-600 font-medium">Kerja sama penyediaan jaringan telekomunikasi di seluruh area regional Jawa Barat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Feature Stats Graphic Card (5 Cols) -->
+                <div class="lg:col-span-5 reveal">
+                    <div class="shine-card bg-gradient-to-br from-[color:var(--ink)] via-[color:var(--ink-light)] to-[color:var(--sky-deep)] p-7 sm:p-8 rounded-3xl text-white shadow-2xl relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 w-48 h-48 rounded-full bg-sky-400/20 blur-2xl pointer-events-none"></div>
+
+                        <span class="text-[11px] font-extrabold uppercase tracking-widest text-sky-300 bg-white/10 px-3 py-1 rounded-full border border-white/20 inline-block mb-6">
+                            Keunggulan CJP
+                        </span>
+
+                        <h3 class="font-display text-2xl font-extrabold text-white mb-4 leading-snug">
+                            Infrastruktur & Perangkat Telekomunikasi Handal
+                        </h3>
+
+                        <p class="text-xs text-sky-100/90 mb-8 leading-relaxed font-medium">
+                            Solusi infrastruktur jaringan terintegrasi untuk instansi pemerintahan, penyedia IT, dan mitra korporat di Indonesia.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-3.5 pt-6 border-t border-white/15">
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20">
+                                <div class="text-[11px] text-sky-200 font-medium mb-1">Domisili Utama</div>
+                                <div class="font-display font-extrabold text-sm text-white">Bandung, Jabar</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20">
+                                <div class="text-[11px] text-sky-200 font-medium mb-1">Status Lisensi</div>
+                                <div class="font-display font-extrabold text-sm text-emerald-400">APJATEL Resmi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
