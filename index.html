@@ -340,15 +340,15 @@
                     </div>
 
                     <!-- Main Headline -->
-                    <h1 class="reveal active delay-100 font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[color:var(--ink)] mb-6 leading-[1.15] tracking-tight">
+                    <h1 class="reveal active delay-100 font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[color:var(--ink)] mb-5 leading-tight tracking-tight">
                         Koneksi Internet <br class="hidden sm:inline">
                         <span class="bg-gradient-to-r from-[color:var(--sky)] via-[color:var(--sky-deep)] to-[color:var(--teal)] bg-clip-text text-transparent">Dedicated & Ultra Stabil</span> <br class="hidden sm:inline">
                         Untuk Bisnis & Personal
                     </h1>
 
                     <!-- Subtitle Description -->
-                    <p class="reveal active delay-200 text-base sm:text-lg text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                        Solusi Private Network & Broadband berkecepatan tinggi dengan rasio dedicated 1:1, garansi Uptime 99.9%, serta pengawasan jaringan 24/7 nonstop.
+                    <p class="reveal active delay-200 text-sm sm:text-base text-gray-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                        Solusi Private Network & Jaringan Lastmile berkecepatan tinggi dengan rasio dedicated 1:1, garansi Uptime 99.9%, serta pengawasan jaringan 24/7 nonstop.
                     </p>
 
                     <!-- Buttons CTA -->
