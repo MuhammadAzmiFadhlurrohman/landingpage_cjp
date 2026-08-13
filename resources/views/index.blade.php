@@ -263,21 +263,17 @@
             </a>
 
             <!-- Desktop Menu Navigation -->
-            <div class="hidden md:flex space-x-7 items-center font-semibold text-sm">
+            <div class="hidden md:flex space-x-6 items-center font-semibold text-sm">
                 <a href="#beranda" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
                     Beranda
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#tentang" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    About Us
+                    Tentang Kami
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#produk" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
                     Produk
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#paket" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    Paket
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#portofolio" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
@@ -296,8 +292,11 @@
                     Lokasi
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#kontak" class="btn-glow bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--sky-deep)] text-white px-6 py-2.5 rounded-full shadow-md font-bold text-xs tracking-wide uppercase">
-                    Kontak Kami
+
+                <!-- Direct WhatsApp Button -->
+                <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="btn-glow bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-5 py-2.5 rounded-full shadow-md font-bold text-xs tracking-wide flex items-center gap-2 hover:scale-105 active:scale-95 transition-all">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>WhatsApp</span>
                 </a>
             </div>
 
@@ -325,7 +324,7 @@
                     <span class="w-8 h-8 rounded-lg bg-sky-50 flex items-center justify-center text-[color:var(--sky-deep)]">
                         <i class="fa-solid fa-building-circle-check text-sm"></i>
                     </span>
-                    About Us
+                    Tentang Kami
                 </a>
                 <a href="#produk" @click="mobileMenuOpen=false" class="flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-[color:var(--ink)] hover:bg-sky-50 transition">
                     <span class="w-8 h-8 rounded-lg bg-sky-50 flex items-center justify-center text-[color:var(--sky-deep)]">
@@ -333,11 +332,11 @@
                     </span>
                     Produk Layanan
                 </a>
-                <a href="#paket" @click="mobileMenuOpen=false" class="flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-[color:var(--ink)] hover:bg-sky-50 transition">
-                    <span class="w-8 h-8 rounded-lg bg-sky-50 flex items-center justify-center text-[color:var(--sky-deep)]">
-                        <i class="fa-solid fa-layer-group text-sm"></i>
+                <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" @click="mobileMenuOpen=false" class="flex items-center gap-3 px-4 py-3 rounded-xl font-bold text-white bg-gradient-to-r from-emerald-500 to-teal-600 shadow-md transition">
+                    <span class="w-8 h-8 rounded-lg bg-white/20 flex items-center justify-center text-white">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
                     </span>
-                    Paket Internet
+                    Hubungi WhatsApp
                 </a>
                 <a href="#portofolio" @click="mobileMenuOpen=false" class="flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-[color:var(--ink)] hover:bg-sky-50 transition">
                     <span class="w-8 h-8 rounded-lg bg-sky-50 flex items-center justify-center text-[color:var(--sky-deep)]">
@@ -411,63 +410,19 @@
 
                     <!-- Buttons CTA -->
                     <div class="reveal active delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-10">
-                        <a href="#paket" class="btn-glow w-full sm:w-auto bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--sky-deep)] text-white font-bold px-8 py-4 rounded-2xl text-base shadow-lg flex items-center justify-center gap-2.5 group">
-                            <span>Lihat Paket Layanan</span>
-                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1.5 transition-transform duration-300"></i>
+                        <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="btn-glow bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-600 text-white px-7 py-3.5 rounded-full font-bold text-sm shadow-xl flex items-center gap-2.5 hover:scale-105 active:scale-95 transition-all w-full sm:w-auto justify-center">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Konsultasi via WhatsApp</span>
                         </a>
-                        <a href="#kontak" class="w-full sm:w-auto bg-white/95 text-[color:var(--ink)] font-bold px-8 py-4 rounded-2xl text-base border border-sky-200 hover:bg-sky-50 hover:border-sky-300 transition shadow-xs flex items-center justify-center gap-2.5 hover:scale-105 transform duration-300">
-                            <i class="fa-regular fa-comments text-base text-[color:var(--sky-deep)]"></i>
-                            <span>Konsultasi Gratis</span>
+                        <a href="#produk" class="px-7 py-3.5 rounded-full border border-sky-200 text-[color:var(--ink)] font-bold text-sm bg-white/80 hover:bg-sky-50 hover:border-sky-300 transition duration-300 w-full sm:w-auto text-center shadow-xs">
+                            Katalog Layanan
                         </a>
                     </div>
-
-                    <!-- Key Selling Points Badges -->
-                    <div class="reveal active delay-400 flex flex-wrap justify-center lg:justify-start items-center gap-6 pt-4 border-t border-sky-200/60 text-xs font-semibold text-gray-600">
-                        <div class="flex items-center gap-2">
-                            <span class="w-5 h-5 rounded-full bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-[10px] font-bold">✓</span>
-                            <span>Dedicated 1:1 Bandwidth</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="w-5 h-5 rounded-full bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-[10px] font-bold">✓</span>
-                            <span>SLA Guarantee 99.9%</span>
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <span class="w-5 h-5 rounded-full bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-[10px] font-bold">✓</span>
-                            <span>Support Prioritas 24/7</span>
-                        </div>
-                    </div>
-
                 </div>
 
-                <!-- Hero Visual Showcase / Dashboard Mockup Card (Right 5 Cols) -->
+                <!-- Hero Visual Showcase -->
                 <div class="lg:col-span-5 reveal active delay-200 relative mt-8 lg:mt-0">
-                    
-                    <!-- Floating Accent Card Top Right -->
-                    <div class="absolute -top-6 -right-4 z-20 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl border border-sky-100 shadow-lg flex items-center gap-3 float-slow hidden sm:flex">
-                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-lg font-bold">
-                            <i class="fa-solid fa-gauge-high"></i>
-                        </div>
-                        <div>
-                            <div class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Bandwidth Speed</div>
-                            <div class="font-display font-extrabold text-sm text-[color:var(--ink)]">Up to 1 Gbps</div>
-                        </div>
-                    </div>
-
-                    <!-- Floating Accent Card Bottom Left -->
-                    <div class="absolute -bottom-6 -left-4 z-20 bg-white/95 backdrop-blur-md px-4 py-3 rounded-2xl border border-sky-100 shadow-lg flex items-center gap-3 float-reverse hidden sm:flex">
-                        <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-[color:var(--sky-deep)] flex items-center justify-center text-lg font-bold">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <div>
-                            <div class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Security Protection</div>
-                            <div class="font-display font-extrabold text-sm text-[color:var(--ink)]">Active Firewall 24/7</div>
-                        </div>
-                    </div>
-
-                    <!-- Main Dashboard Graphic Card -->
                     <div class="shine-card bg-gradient-to-b from-white via-white/95 to-mist p-6 sm:p-7 rounded-3xl border border-sky-100 shadow-2xl relative z-10 overflow-hidden">
-                        
-                        <!-- Header Mockup -->
                         <div class="flex justify-between items-center pb-4 mb-5 border-b border-sky-100">
                             <div class="flex items-center gap-2">
                                 <div class="w-3 h-3 rounded-full bg-rose-400"></div>
@@ -480,8 +435,6 @@
                                 Live Monitoring
                             </span>
                         </div>
-
-                        <!-- Speed Metrics Grid -->
                         <div class="grid grid-cols-2 gap-3.5 mb-5">
                             <div class="bg-mist p-4 rounded-2xl border border-sky-100/80">
                                 <div class="flex items-center justify-between mb-1">
@@ -498,105 +451,6 @@
                                 <div class="font-display font-extrabold text-2xl text-[color:var(--ink)]">998.1 <span class="text-xs font-semibold text-gray-500">Mbps</span></div>
                             </div>
                         </div>
-
-                        <!-- Live Pulse Wave SVG Graphic -->
-                        <div class="bg-gradient-to-r from-[color:var(--ink)] to-[color:var(--ink-light)] p-4 rounded-2xl text-white mb-4 shadow-inner relative overflow-hidden">
-                            <div class="flex justify-between items-center text-xs mb-2">
-                                <span class="font-semibold text-sky-200">Latency & Stability</span>
-                                <span class="font-bold text-emerald-400 font-mono">&lt; 1.8 ms (Super Low)</span>
-                            </div>
-                            <svg class="w-full h-12" viewBox="0 0 300 50" fill="none">
-                                <path d="M0 30 Q 30 10, 60 30 T 120 20 T 180 35 T 240 15 T 300 25" stroke="var(--sky)" stroke-width="3" fill="none" class="connect-line"/>
-                                <path d="M0 30 Q 30 10, 60 30 T 120 20 T 180 35 T 240 15 T 300 25 L 300 50 L 0 50 Z" fill="url(#hero-gradient)" opacity="0.25"/>
-                                <defs>
-                                    <linearGradient id="hero-gradient" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stop-color="var(--sky)"/>
-                                        <stop offset="100%" stop-color="var(--sky)" stop-opacity="0"/>
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-
-                        <!-- Server Nodes Status -->
-                        <div class="flex items-center justify-between text-xs text-gray-600 bg-white p-3 rounded-xl border border-sky-100">
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-network-wired text-[color:var(--sky-deep)]"></i>
-                                <span class="font-bold text-[color:var(--ink)]">Redundancy Ring Topology</span>
-                            </div>
-                            <span class="text-[11px] font-bold text-teal-600">Active Node</span>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Trust & Stat Counter Bar -->
-            <div class="reveal active delay-500 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 max-w-5xl mx-auto mt-12 sm:mt-16 pt-8 sm:pt-10 border-t border-sky-200/60">
-                <div class="shine-card card-hover bg-white/90 backdrop-blur-md p-3.5 sm:p-6 rounded-2xl border border-sky-100/90 shadow-md flex flex-col sm:flex-row items-center justify-center text-center sm:text-left gap-2 sm:gap-4 group">
-                    <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-sky-100/90 flex items-center justify-center text-[color:var(--sky-deep)] text-lg sm:text-2xl font-bold group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 shadow-xs shrink-0">
-                        <i class="fa-solid fa-server"></i>
-                    </div>
-                    <div>
-                        <div class="font-display font-extrabold text-xl sm:text-3xl text-[color:var(--ink)]">100+</div>
-                        <div class="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider">Klien Terhubung</div>
-                    </div>
-                </div>
-
-                <div class="shine-card card-hover bg-white/90 backdrop-blur-md p-3.5 sm:p-6 rounded-2xl border border-sky-100/90 shadow-md flex flex-col sm:flex-row items-center justify-center text-center sm:text-left gap-2 sm:gap-4 group">
-                    <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-teal-100/90 flex items-center justify-center text-[color:var(--teal)] text-lg sm:text-2xl font-bold group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 shadow-xs shrink-0">
-                        <i class="fa-solid fa-shield-halved"></i>
-                    </div>
-                    <div>
-                        <div class="font-display font-extrabold text-xl sm:text-3xl text-[color:var(--ink)]">APJATEL</div>
-                        <div class="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider">Anggota Tetap Resmi</div>
-                    </div>
-                </div>
-
-                <div class="shine-card card-hover bg-white/90 backdrop-blur-md p-3.5 sm:p-6 rounded-2xl border border-sky-100/90 shadow-md flex flex-col sm:flex-row items-center justify-center text-center sm:text-left gap-2 sm:gap-4 group col-span-2 sm:col-span-1">
-                    <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-sky-100/90 flex items-center justify-center text-[color:var(--sky-deep)] text-lg sm:text-2xl font-bold group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 shadow-xs shrink-0">
-                        <i class="fa-solid fa-headset"></i>
-                    </div>
-                    <div>
-                        <div class="font-display font-extrabold text-xl sm:text-3xl text-[color:var(--ink)]">24/7</div>
-                        <div class="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider">NOC & Priority Support</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Section Profil Perusahaan & Layanan Utama (About Us) -->
-    <section id="tentang" class="py-20 bg-white px-6 border-t border-sky-100 relative overflow-hidden">
-        <div class="container mx-auto max-w-4xl">
-            <div class="reveal text-center">
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold bg-sky-100/80 text-[color:var(--sky-deep)] border border-sky-200 shadow-2xs mb-4">
-                    <i class="fa-solid fa-building-circle-check text-sky-500"></i>
-                    <span>Profil Perusahaan Resmi</span>
-                </div>
-
-                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-[color:var(--ink)] tracking-tight mb-5 leading-tight">
-                    PT Connecti Jelajah Priangan <span class="text-[color:var(--sky-deep)]">(CJP)</span>
-                </h2>
-
-                <p class="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed font-medium max-w-3xl mx-auto">
-                    <strong class="text-[color:var(--ink)]">PT Connecti Jelajah Priangan (CJP)</strong> adalah sebuah perusahaan swasta berbadan hukum di Indonesia yang berpusat di <strong class="text-[color:var(--ink)]">Bandung, Jawa Barat</strong>. Perusahaan ini bergerak di bidang penyediaan infrastruktur telekomunikasi dan jaringan, serta terdaftar resmi sebagai anggota tetap asosiasi <strong class="text-[color:var(--sky-deep)] font-extrabold">APJATEL</strong>.
-                </p>
-
-                <!-- APJATEL Official Membership Highlight Card -->
-                <div class="p-6 rounded-3xl bg-gradient-to-r from-sky-50 via-mist to-sky-50/80 border border-sky-200/90 shadow-md flex flex-col sm:flex-row items-center text-center sm:text-left gap-5 max-w-3xl mx-auto">
-                    <div class="w-14 h-14 rounded-2xl bg-[color:var(--sky-deep)] text-white flex items-center justify-center text-2xl shrink-0 shadow-lg">
-                        <i class="fa-solid fa-award"></i>
-                    </div>
-                    <div>
-                        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1.5">
-                            <span class="font-display font-extrabold text-base text-[color:var(--ink)]">Anggota Tetap APJATEL</span>
-                            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-700 uppercase tracking-wider">Terdaftar Resmi</span>
-                        </div>
-                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
-                            Terdaftar resmi sebagai anggota tetap <strong class="text-gray-800">APJATEL (Asosiasi Penyelenggara Jaringan Telekomunikasi)</strong>, menjamin kehandalan jaringan, standar keselamatan kerja, serta perizinan resmi nasional.
-                        </p>
                     </div>
                 </div>
             </div>
@@ -609,7 +463,6 @@
             <div class="reveal text-center mb-16">
                 <span class="eyebrow justify-center mb-3">Solusi & Infrastruktur</span>
                 <h2 class="font-display text-3xl md:text-4xl font-extrabold text-[color:var(--ink)] tracking-tight">Katalog Produk Layanan</h2>
-                <p class="mt-3 text-gray-600 max-w-xl mx-auto text-sm sm:text-base">Lingkup layanan & proyek utama PT Connecti Jelajah Priangan (CJP).</p>
             </div>
 
             @php
@@ -620,235 +473,52 @@
                         'tag' => 'Site Installation',
                         'icon' => 'fa-solid fa-tower-cell',
                         'bg' => 'bgcard.jpg',
-                        'details' => [
-                            'Pemasangan Perangkat Jaringan (Site Installation)',
-                            'Pemetaan Lokasi Perangkat & Fiber Optic',
-                            'Instalasi Utilitas Pendukung Komunikasi',
-                            'Quality Control & Testing Nonstop',
-                        ],
+                        'details' => ['Pemasangan Perangkat Jaringan', 'Pemetaan Lokasi & Fiber Optic', 'Quality Control 24/7'],
                     ],
                     [
-                        'judul' => 'PENGELOLAAN ADMINISTRASI & PERIZINAN PROYEK',
+                        'judul' => 'PENGELOLAAN ADMINISTRASI & PERIZINAN',
                         'sub' => 'Pengelolaan administrasi proyek infrastruktur telekomunikasi dan perizinan kerja sama.',
                         'tag' => 'Perizinan & Management',
                         'icon' => 'fa-solid fa-file-signature',
                         'bg' => 'bgcard2.jpg',
-                        'details' => [
-                            'Pengurusan Perizinan Jaringan Telekomunikasi',
-                            'Administrasi Kerjasama Lintas Instansi & Regional',
-                            'Manajemen Dokumentasi & Legalitas Proyek',
-                            'Kepatuhan Standar APJATEL & Regulasi',
-                        ],
+                        'details' => ['Pengurusan Izin Telekomunikasi', 'Administrasi Lintas Instansi', 'Kepatuhan Standar APJATEL'],
                     ],
                     [
-                        'judul' => 'KEMITRAAN JARINGAN REGIONAL JAWA BARAT',
+                        'judul' => 'KEMITRAAN JARINGAN REGIONAL',
                         'sub' => 'Kerja sama penyediaan jaringan telekomunikasi di seluruh area regional Jawa Barat.',
                         'tag' => 'Kemitraan Regional',
                         'icon' => 'fa-solid fa-network-wired',
                         'bg' => 'bgcard3.jpg',
-                        'details' => [
-                            'Kerjasama Penyediaan Jaringan Telekomunikasi',
-                            'Pengadaan & Pengelolaan Infrastruktur Lastmile',
-                            'Cakupan Wilayah Kota / Kabupaten Jawa Barat',
-                            'Monitoring Nonstop 24/7 & Support Prioritas',
-                        ],
+                        'details' => ['Pengadaan Infrastruktur Lastmile', 'Jangkauan Wilayah Luas', 'Support Prioritas 24/7'],
                     ],
                 ];
             @endphp
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 @foreach($officialServices as $index => $srv)
-                @php
-                    $delay = (($index + 1) * 150) . 'ms';
-                @endphp
-                <div class="reveal shine-card card-hover bg-white p-8 rounded-3xl border border-sky-100 shadow-sm relative overflow-hidden flex flex-col justify-between group transform-gpu"
-                     style="transition-delay: {{ $delay }};">
-                    
-                    <!-- GPU Accelerated Isolated Background Image Layer -->
-                    <div class="absolute inset-0 bg-cover bg-center opacity-25 group-hover:opacity-35 group-hover:scale-105 transition-all duration-500 pointer-events-none transform-gpu"
-                         style="background-image: url('{{ asset('assets/' . $srv['bg']) }}');"></div>
-                    
-                    <!-- Soft Ambient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-sky-50/90 pointer-events-none"></div>
-
-                    <!-- Top accent line -->
-                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:h-2 z-10"></div>
-
+                <div class="reveal shine-card card-hover bg-white p-8 rounded-3xl border border-sky-100 shadow-sm relative overflow-hidden flex flex-col justify-between group">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-25 group-hover:opacity-35 transition-all duration-500 pointer-events-none" style="background-image: url('{{ asset('assets/' . $srv['bg']) }}');"></div>
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] z-10"></div>
                     <div class="relative z-10">
-                        <!-- Category Badge -->
                         <div class="flex justify-between items-center mb-6">
-                            <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider text-[color:var(--sky-deep)] bg-sky-100/80 border border-sky-200">
-                                {{ $srv['tag'] }}
-                            </span>
-                            <div class="w-12 h-12 rounded-2xl bg-white shadow-md flex items-center justify-center text-[color:var(--sky-deep)] text-xl border border-sky-100 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
-                                <i class="{{ $srv['icon'] }}"></i>
-                            </div>
+                            <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider text-[color:var(--sky-deep)] bg-sky-100/80">{{ $srv['tag'] }}</span>
+                            <div class="w-12 h-12 rounded-2xl bg-white shadow-md flex items-center justify-center text-[color:var(--sky-deep)] text-xl"><i class="{{ $srv['icon'] }}"></i></div>
                         </div>
-
-                        <h3 class="font-display text-lg font-extrabold text-[color:var(--ink)] mb-3 leading-snug group-hover:text-[color:var(--sky-deep)] transition-colors duration-300">
-                            {{ $srv['judul'] }}
-                        </h3>
-
-                        <p class="text-xs text-gray-600 mb-6 leading-relaxed font-medium">
-                            {{ $srv['sub'] }}
-                        </p>
-
-                        <!-- Rincian Fitur Checklist -->
+                        <h3 class="font-display text-lg font-extrabold text-[color:var(--ink)] mb-3">{{ $srv['judul'] }}</h3>
+                        <p class="text-xs text-gray-600 mb-6 leading-relaxed">{{ $srv['sub'] }}</p>
                         <ul class="text-xs text-gray-700 space-y-2.5 mb-6 border-t border-sky-100 pt-4">
                             @foreach($srv['details'] as $item)
                                 <li class="flex items-start gap-2.5">
-                                    <span class="w-4 h-4 rounded-full bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300">✓</span>
+                                    <span class="w-4 h-4 rounded-full bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">✓</span>
                                     <span class="font-medium leading-relaxed">{{ $item }}</span>
                                 </li>
                             @endforeach
                         </ul>
                     </div>
-
-                    <a href="#kontak" class="relative z-10 w-full mt-4 text-center py-2.5 rounded-xl border border-sky-200 text-[color:var(--sky-deep)] font-bold text-xs uppercase tracking-wider bg-white/80 hover:bg-[color:var(--sky-deep)] hover:text-white hover:shadow-md transition duration-300">
-                        Konsultasi Layanan
+                    <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="relative z-10 w-full mt-4 text-center py-2.5 rounded-xl border border-emerald-300 text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-50 hover:bg-emerald-600 hover:text-white hover:shadow-md transition duration-300 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Konsultasi via WhatsApp</span>
                     </a>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Paket Layanan Broadband -->
-    <section id="paket" class="relative py-24 bg-mist px-6 border-t border-sky-100 overflow-hidden">
-        @php
-            $tierStyles = [
-                'bronze'     => [
-                    'accent'   => 'from-amber-600 to-amber-500',
-                    'badge_bg' => 'bg-amber-50 text-amber-700 border-amber-200',
-                    'icon_bg'  => 'bg-amber-100 text-amber-700',
-                    'badge'    => 'STARTER',
-                    'popular'  => false,
-                ],
-                'silver'     => [
-                    'accent'   => 'from-slate-600 to-gray-500',
-                    'badge_bg' => 'bg-slate-100 text-slate-700 border-slate-200',
-                    'icon_bg'  => 'bg-slate-100 text-slate-700',
-                    'badge'    => 'STANDARD',
-                    'popular'  => false,
-                ],
-                'gold'       => [
-                    'accent'   => 'from-amber-500 to-yellow-400',
-                    'badge_bg' => 'bg-amber-100 text-amber-800 border-amber-300',
-                    'icon_bg'  => 'bg-amber-100 text-amber-600',
-                    'badge'    => 'BEST SELLER',
-                    'popular'  => true,
-                ],
-                'platinum'   => [
-                    'accent'   => 'from-[color:var(--sky)] to-[color:var(--sky-deep)]',
-                    'badge_bg' => 'bg-sky-100 text-[color:var(--sky-deep)] border-sky-200',
-                    'icon_bg'  => 'bg-sky-100 text-[color:var(--sky-deep)]',
-                    'badge'    => 'POPULER',
-                    'popular'  => true,
-                ],
-                'enterprise' => [
-                    'accent'   => 'from-[color:var(--ink)] to-[color:var(--ink-light)]',
-                    'badge_bg' => 'bg-sky-900 text-sky-100 border-sky-800',
-                    'icon_bg'  => 'bg-sky-100 text-[color:var(--ink)]',
-                    'badge'    => 'ENTERPRISE',
-                    'popular'  => true,
-                ],
-                'ultra'      => [
-                    'accent'   => 'from-teal-500 to-emerald-400',
-                    'badge_bg' => 'bg-teal-50 text-teal-700 border-teal-200',
-                    'icon_bg'  => 'bg-teal-100 text-teal-600',
-                    'badge'    => 'ULTRA SPEED',
-                    'popular'  => false,
-                ],
-            ];
-        @endphp
-
-        <!-- Animated Background Dot Grid -->
-        <div class="absolute inset-0 pointer-events-none opacity-30" style="background-image: radial-gradient(circle, rgba(41,171,226,0.3) 1px, transparent 1px); background-size: 24px 24px;"></div>
-
-        <div class="container mx-auto max-w-7xl relative z-10">
-            <div class="reveal text-center mb-16">
-                <span class="eyebrow justify-center mb-3">Pricelist 2026</span>
-                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-[color:var(--ink)] tracking-tight">Paket Jaringan Lastmile</h2>
-                <p class="mt-3 text-gray-600 max-w-xl mx-auto text-sm sm:text-base">Pilihlah kapasitas bandwidth jaringan lastmile yang paling sesuai dengan kebutuhan instansi & perusahaan Anda.</p>
-            </div>
-
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6 lg:gap-8 items-stretch">
-                @foreach($broadbands as $paket)
-                @php
-                    $words = explode(' ', trim($paket->nama_broadband));
-                    $tierPrefix = strtolower($words[0] ?? '');
-                    $style = $tierStyles[$tierPrefix] ?? [
-                        'accent'   => 'from-[color:var(--sky)] to-[color:var(--sky-deep)]',
-                        'badge_bg' => 'bg-sky-100 text-[color:var(--sky-deep)] border-sky-200',
-                        'icon_bg'  => 'bg-sky-100 text-[color:var(--sky-deep)]',
-                        'badge'    => 'BROADBAND',
-                        'popular'  => false,
-                    ];
-                    $delay = (($loop->iteration % 4) * 100) . 'ms';
-                @endphp
-                
-                <div class="reveal shine-card relative group flex flex-col {{ $style['popular'] ? 'lg:-translate-y-2' : '' }}" style="transition-delay: {{ $delay }};">
-                    
-                    <!-- Popular Tag Badge -->
-                    @if($style['popular'])
-                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 z-30 bg-gradient-to-r from-amber-500 to-yellow-400 text-black text-[9px] sm:text-[10px] font-black uppercase tracking-widest py-1 px-3 sm:px-4 rounded-full shadow-md border border-amber-300 flex items-center gap-1 float-slow">
-                            <i class="fa-solid fa-star text-[8px] sm:text-[9px]"></i>
-                            <span>{{ $style['badge'] }}</span>
-                        </div>
-                    @endif
-
-                    <div class="relative bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-7 shadow-md hover:shadow-2xl border border-sky-100/90 flex flex-col justify-between h-full transform transition-all duration-300 group-hover:-translate-y-2 overflow-hidden">
-                        
-                        <!-- Top Accent Bar -->
-                        <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r {{ $style['accent'] }}"></div>
-
-                        <div>
-                            <!-- Header Row with Badge & Icon -->
-                            <div class="flex items-center justify-between mb-3 sm:mb-5 pt-1">
-                                <span class="px-2 py-0.5 sm:px-3 sm:py-1 rounded-full text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wider border {{ $style['badge_bg'] }}">
-                                    {{ $style['badge'] }}
-                                </span>
-                                <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl sm:rounded-2xl {{ $style['icon_bg'] }} flex items-center justify-center text-sm sm:text-lg font-bold group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 shrink-0">
-                                    <i class="fa-solid fa-bolt"></i>
-                                </div>
-                            </div>
-
-                            <!-- Package Name -->
-                            <h3 class="font-display text-base sm:text-xl font-extrabold text-[color:var(--ink)] mb-0.5 sm:mb-1 leading-snug group-hover:text-[color:var(--sky-deep)] transition-colors">
-                                {{ $paket->nama_broadband }}
-                            </h3>
-                            <p class="text-[9px] sm:text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-3 sm:mb-6">High-Speed Lastmile</p>
-
-                            <!-- Speed Capacity Box -->
-                            <div class="bg-gradient-to-br from-mist via-white to-sky-50/50 p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-sky-100 text-center mb-3 sm:mb-6">
-                                <div class="text-[9px] sm:text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Kapasitas Kecepatan</div>
-                                <div class="flex items-baseline justify-center gap-1">
-                                    <span class="font-display text-2xl sm:text-5xl font-extrabold text-[color:var(--ink)] tracking-tight">{{ $paket->kecepatan }}</span>
-                                    <span class="font-display font-extrabold text-xs sm:text-lg text-[color:var(--sky-deep)]">Mbps</span>
-                                </div>
-                            </div>
-
-                            <!-- Price Display Box -->
-                            <div class="text-center mb-3 sm:mb-6">
-                                <div class="text-[10px] sm:text-xs text-gray-500 font-medium mb-0.5">Biaya Bulanan (MRC)</div>
-                                <div class="font-display text-base sm:text-2xl font-extrabold text-[color:var(--ink)]">
-                                    Rp {{ number_format($paket->harga, 0, ',', '.') }}<span class="text-[10px] sm:text-xs font-semibold text-gray-500"> /bln</span>
-                                </div>
-                                <div class="inline-block mt-1 sm:mt-2 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full bg-mist text-[9px] sm:text-[11px] font-semibold text-gray-500 border border-sky-100">
-                                    OTC: <span class="font-bold text-gray-700">Rp {{ number_format($paket->otc, 0, ',', '.') }}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Action Button -->
-                        <div class="pt-3 sm:pt-4 border-t border-sky-100/80">
-                            <a href="#kontak" class="btn-glow w-full bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--sky-deep)] text-white font-bold py-2.5 sm:py-3.5 px-3 sm:px-6 rounded-xl sm:rounded-2xl text-[10px] sm:text-xs uppercase tracking-wider shadow-md flex items-center justify-center gap-1.5 group-hover:scale-[1.02] transition-transform duration-300">
-                                <span>Pilih Paket</span>
-                                <i class="fa-solid fa-arrow-right text-[10px] sm:text-xs group-hover:translate-x-1 transition-transform duration-300"></i>
-                            </a>
-                        </div>
-
-                    </div>
                 </div>
                 @endforeach
             </div>
@@ -857,8 +527,6 @@
 
     <!-- Section Portofolio Proyek -->
     <section id="portofolio" class="relative py-24 px-4 sm:px-6 border-t border-sky-800/40 overflow-hidden" style="background: linear-gradient(135deg, #081F38 0%, #0B2A4A 40%, #11426C 75%, #1C8AC0 100%);">
-        
-        <!-- Subtle Background Glows & Pattern -->
         <div class="absolute inset-0 pointer-events-none opacity-15" style="background-image: radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px); background-size: 24px 24px;"></div>
         <div class="absolute -top-28 -right-28 w-96 h-96 rounded-full bg-sky-500/15 blur-3xl pointer-events-none"></div>
         <div class="absolute -bottom-28 -left-28 w-96 h-96 rounded-full bg-teal-400/15 blur-3xl pointer-events-none"></div>
@@ -1059,18 +727,18 @@
                 }
             @endphp
 
-            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10 max-w-4xl mx-auto">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-6 max-w-4xl mx-auto items-center justify-items-center">
                 @foreach($clientList as $client)
                 @php
                     $delay = ($loop->iteration * 100) . 'ms';
                     $imgPath = asset('assets/' . $client['gambar']);
                     $scaleClass = $client['scale'] ?? 'scale-100';
                 @endphp
-                <div class="reveal shine-card card-hover bg-white p-6 rounded-2xl border border-sky-100 shadow-sm hover:shadow-xl hover:border-sky-300 transition-all duration-300 flex justify-center items-center group h-28 w-44 sm:w-56 transform hover:-translate-y-1.5 overflow-hidden" style="transition-delay: {{ $delay }};">
+                <div class="reveal shine-card card-hover bg-white p-4 sm:p-6 rounded-2xl border border-sky-100 shadow-sm hover:shadow-xl hover:border-sky-300 transition-all duration-300 flex justify-center items-center group h-24 sm:h-28 w-full transform hover:-translate-y-1.5 overflow-hidden" style="transition-delay: {{ $delay }};">
                     <img src="{{ $imgPath }}" 
                          alt="{{ $client['nama'] }}" 
                          title="{{ $client['nama'] }}"
-                         class="max-h-16 max-w-full object-contain {{ $scaleClass }} group-hover:scale-125 transition-all duration-300">
+                         class="max-h-12 sm:max-h-16 max-w-full object-contain {{ $scaleClass }} group-hover:scale-125 transition-all duration-300">
                 </div>
                 @endforeach
             </div>
