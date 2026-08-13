@@ -457,12 +457,49 @@
         </div>
     </section>
 
-    <!-- Section Produk Kami -->
+    <!-- Section Profil Perusahaan & Layanan Utama (Tentang Kami) -->
+    <section id="tentang" class="py-20 bg-white px-6 border-t border-sky-100 relative overflow-hidden">
+        <div class="container mx-auto max-w-4xl">
+            <div class="reveal text-center">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold bg-sky-100/80 text-[color:var(--sky-deep)] border border-sky-200 shadow-2xs mb-4">
+                    <i class="fa-solid fa-building-circle-check text-sky-500"></i>
+                    <span>Profil Perusahaan Resmi</span>
+                </div>
+
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-[color:var(--ink)] tracking-tight mb-5 leading-tight">
+                    PT Connecti Jelajah Priangan <span class="text-[color:var(--sky-deep)]">(CJP)</span>
+                </h2>
+
+                <p class="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed font-medium max-w-3xl mx-auto">
+                    <strong class="text-[color:var(--ink)]">PT Connecti Jelajah Priangan (CJP)</strong> adalah sebuah perusahaan swasta berbadan hukum di Indonesia yang berpusat di <strong class="text-[color:var(--ink)]">Bandung, Jawa Barat</strong>. Perusahaan ini bergerak di bidang penyediaan infrastruktur telekomunikasi dan jaringan, serta terdaftar resmi sebagai anggota tetap asosiasi <strong class="text-[color:var(--sky-deep)] font-extrabold">APJATEL</strong> (Asosiasi Penyelenggara Jaringan Telekomunikasi).
+                </p>
+
+                <!-- APJATEL Official Membership Highlight Card -->
+                <div class="p-6 rounded-3xl bg-gradient-to-r from-sky-50 via-mist to-sky-50/80 border border-sky-200/90 shadow-md flex flex-col sm:flex-row items-center text-center sm:text-left gap-5 max-w-3xl mx-auto">
+                    <div class="w-14 h-14 rounded-2xl bg-[color:var(--sky-deep)] text-white flex items-center justify-center text-2xl shrink-0 shadow-lg">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1.5">
+                            <span class="font-display font-extrabold text-base text-[color:var(--ink)]">Anggota Tetap APJATEL</span>
+                            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-700 uppercase tracking-wider">Terdaftar Resmi</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
+                            Terdaftar resmi sebagai anggota tetap <strong class="text-gray-800">APJATEL (Asosiasi Penyelenggara Jaringan Telekomunikasi)</strong>, menjamin kehandalan jaringan, standar keselamatan kerja, serta perizinan resmi nasional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Katalog Produk Layanan -->
     <section id="produk" class="py-24 bg-gradient-produk px-6 border-t border-sky-100">
-        <div class="container mx-auto">
+        <div class="container mx-auto max-w-6xl">
             <div class="reveal text-center mb-16">
                 <span class="eyebrow justify-center mb-3">Solusi & Infrastruktur</span>
                 <h2 class="font-display text-3xl md:text-4xl font-extrabold text-[color:var(--ink)] tracking-tight">Katalog Produk Layanan</h2>
+                <p class="mt-3 text-gray-600 max-w-xl mx-auto text-sm sm:text-base font-medium">Lingkup layanan & proyek utama PT Connecti Jelajah Priangan (CJP).</p>
             </div>
 
             @php
@@ -473,50 +510,94 @@
                         'tag' => 'Site Installation',
                         'icon' => 'fa-solid fa-tower-cell',
                         'bg' => 'bgcard.jpg',
-                        'details' => ['Pemasangan Perangkat Jaringan', 'Pemetaan Lokasi & Fiber Optic', 'Quality Control 24/7'],
+                        'wa_text' => 'Halo%20PT%20CJP,%20saya%20tertarik%20dengan%20layanan%20Site%20Installation%20%26%20Pemetaan%20Perangkat',
+                        'details' => [
+                            'Pemasangan Perangkat Jaringan (Site Installation)',
+                            'Pemetaan Lokasi Perangkat & Fiber Optic',
+                            'Instalasi Utilitas Pendukung Komunikasi',
+                            'Quality Control & Testing Nonstop 24/7',
+                        ],
                     ],
                     [
-                        'judul' => 'PENGELOLAAN ADMINISTRASI & PERIZINAN',
+                        'judul' => 'PENGELOLAAN ADMINISTRASI & PERIZINAN PROYEK',
                         'sub' => 'Pengelolaan administrasi proyek infrastruktur telekomunikasi dan perizinan kerja sama.',
                         'tag' => 'Perizinan & Management',
                         'icon' => 'fa-solid fa-file-signature',
                         'bg' => 'bgcard2.jpg',
-                        'details' => ['Pengurusan Izin Telekomunikasi', 'Administrasi Lintas Instansi', 'Kepatuhan Standar APJATEL'],
+                        'wa_text' => 'Halo%20PT%20CJP,%20saya%20tertarik%20dengan%20layanan%20Pengelolaan%20Administrasi%20%26%20Perizinan%20Proyek',
+                        'details' => [
+                            'Pengurusan Perizinan Jaringan Telekomunikasi',
+                            'Administrasi Kerjasama Lintas Instansi & Regional',
+                            'Manajemen Dokumentasi & Legalitas Proyek',
+                            'Kepatuhan Standar APJATEL & Regulasi',
+                        ],
                     ],
                     [
-                        'judul' => 'KEMITRAAN JARINGAN REGIONAL',
+                        'judul' => 'KEMITRAAN JARINGAN REGIONAL JAWA BARAT',
                         'sub' => 'Kerja sama penyediaan jaringan telekomunikasi di seluruh area regional Jawa Barat.',
                         'tag' => 'Kemitraan Regional',
                         'icon' => 'fa-solid fa-network-wired',
                         'bg' => 'bgcard3.jpg',
-                        'details' => ['Pengadaan Infrastruktur Lastmile', 'Jangkauan Wilayah Luas', 'Support Prioritas 24/7'],
+                        'wa_text' => 'Halo%20PT%20CJP,%20saya%20tertarik%20dengan%20layanan%20Kemitraan%20Jaringan%20Regional%20Jawa%20Barat',
+                        'details' => [
+                            'Kerjasama Penyediaan Jaringan Telekomunikasi',
+                            'Pengadaan & Pengelolaan Infrastruktur Lastmile',
+                            'Cakupan Wilayah Kota / Kabupaten Jawa Barat',
+                            'Monitoring Nonstop 24/7 & Support Prioritas',
+                        ],
                     ],
                 ];
             @endphp
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
                 @foreach($officialServices as $index => $srv)
-                <div class="reveal shine-card card-hover bg-white p-8 rounded-3xl border border-sky-100 shadow-sm relative overflow-hidden flex flex-col justify-between group">
-                    <div class="absolute inset-0 bg-cover bg-center opacity-25 group-hover:opacity-35 transition-all duration-500 pointer-events-none" style="background-image: url('{{ asset('assets/' . $srv['bg']) }}');"></div>
-                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] z-10"></div>
+                @php
+                    $delay = (($index + 1) * 150) . 'ms';
+                @endphp
+                <div class="reveal shine-card card-hover bg-white p-7 sm:p-8 rounded-3xl border border-sky-100 shadow-sm relative overflow-hidden flex flex-col justify-between group transform-gpu" style="transition-delay: {{ $delay }};">
+                    
+                    <!-- GPU Accelerated Isolated Background Image Layer -->
+                    <div class="absolute inset-0 bg-cover bg-center opacity-20 group-hover:opacity-30 group-hover:scale-105 transition-all duration-500 pointer-events-none transform-gpu" style="background-image: url('{{ asset('assets/' . $srv['bg']) }}');"></div>
+                    
+                    <!-- Soft Ambient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-sky-50/90 pointer-events-none"></div>
+
+                    <!-- Top accent line -->
+                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:h-2 z-10"></div>
+
                     <div class="relative z-10">
-                        <div class="flex justify-between items-center mb-6">
-                            <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider text-[color:var(--sky-deep)] bg-sky-100/80">{{ $srv['tag'] }}</span>
-                            <div class="w-12 h-12 rounded-2xl bg-white shadow-md flex items-center justify-center text-[color:var(--sky-deep)] text-xl"><i class="{{ $srv['icon'] }}"></i></div>
+                        <!-- Category Badge & Icon -->
+                        <div class="flex justify-between items-center mb-5">
+                            <span class="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider text-[color:var(--sky-deep)] bg-sky-100/90 border border-sky-200 shadow-2xs">
+                                {{ $srv['tag'] }}
+                            </span>
+                            <div class="w-12 h-12 rounded-2xl bg-white shadow-md flex items-center justify-center text-[color:var(--sky-deep)] text-xl border border-sky-100 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+                                <i class="{{ $srv['icon'] }}"></i>
+                            </div>
                         </div>
-                        <h3 class="font-display text-lg font-extrabold text-[color:var(--ink)] mb-3">{{ $srv['judul'] }}</h3>
-                        <p class="text-xs text-gray-600 mb-6 leading-relaxed">{{ $srv['sub'] }}</p>
+
+                        <h3 class="font-display text-base sm:text-lg font-extrabold text-[color:var(--ink)] mb-3 leading-snug group-hover:text-[color:var(--sky-deep)] transition-colors duration-300">
+                            {{ $srv['judul'] }}
+                        </h3>
+
+                        <p class="text-xs text-gray-600 mb-5 leading-relaxed font-medium">
+                            {{ $srv['sub'] }}
+                        </p>
+
+                        <!-- Rincian Fitur Checklist -->
                         <ul class="text-xs text-gray-700 space-y-2.5 mb-6 border-t border-sky-100 pt-4">
                             @foreach($srv['details'] as $item)
                                 <li class="flex items-start gap-2.5">
-                                    <span class="w-4 h-4 rounded-full bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5">✓</span>
+                                    <span class="w-4 h-4 rounded-full bg-teal-100 text-[color:var(--teal)] flex items-center justify-center text-[10px] font-bold flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform duration-300">✓</span>
                                     <span class="font-medium leading-relaxed">{{ $item }}</span>
                                 </li>
                             @endforeach
                         </ul>
                     </div>
-                    <a href="https://wa.me/6281283800066?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="relative z-10 w-full mt-4 text-center py-2.5 rounded-xl border border-emerald-300 text-emerald-700 font-bold text-xs uppercase tracking-wider bg-emerald-50 hover:bg-emerald-600 hover:text-white hover:shadow-md transition duration-300 flex items-center justify-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-sm"></i>
+
+                    <!-- Direct WhatsApp Button for each product -->
+                    <a href="https://wa.me/6281283800066?text={{ $srv['wa_text'] }}" target="_blank" rel="noopener" class="relative z-10 w-full mt-4 text-center py-3 rounded-xl border border-emerald-300 text-white font-bold text-xs uppercase tracking-wider bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 shadow-md hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
                         <span>Konsultasi via WhatsApp</span>
                     </a>
                 </div>
