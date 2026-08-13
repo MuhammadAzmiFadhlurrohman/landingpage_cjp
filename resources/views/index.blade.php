@@ -904,15 +904,15 @@
                 </div>
 
                 <!-- Custom Navigation Arrows & Pagination Dots -->
-                <div class="flex items-center justify-between sm:justify-center gap-3 sm:gap-8 mt-8 px-4 max-w-sm sm:max-w-md mx-auto">
-                    <button class="swiper-button-prev-porto w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/20 hover:bg-[color:var(--sky)] text-white border border-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-xl shrink-0">
-                        <i class="fa-solid fa-chevron-left text-base sm:text-lg"></i>
+                <div class="flex items-center justify-between sm:justify-center gap-2 sm:gap-6 mt-6 px-4 max-w-sm sm:max-w-md mx-auto w-full">
+                    <button class="swiper-button-prev-porto w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 hover:bg-[color:var(--sky)] text-white border border-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-xl shrink-0">
+                        <i class="fa-solid fa-chevron-left text-sm sm:text-base"></i>
                     </button>
 
-                    <div class="swiper-pagination-portfolio !w-auto flex items-center justify-center gap-1.5 px-2"></div>
+                    <div class="swiper-pagination-portfolio !w-auto flex items-center justify-center gap-1 mx-auto"></div>
 
-                    <button class="swiper-button-next-porto w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/20 hover:bg-[color:var(--sky)] text-white border border-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-xl shrink-0">
-                        <i class="fa-solid fa-chevron-right text-base sm:text-lg"></i>
+                    <button class="swiper-button-next-porto w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/20 hover:bg-[color:var(--sky)] text-white border border-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-xl shrink-0">
+                        <i class="fa-solid fa-chevron-right text-sm sm:text-base"></i>
                     </button>
                 </div>
             </div>
@@ -1321,6 +1321,7 @@
                     pagination: {
                         el: '.swiper-pagination-portfolio',
                         clickable: true,
+                        dynamicBullets: true,
                     },
                     navigation: {
                         nextEl: '.swiper-button-next-porto',
