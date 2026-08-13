@@ -244,7 +244,7 @@
             
             <!-- Logo Branding (Hanya Gambar Logo) -->
             <a href="#beranda" class="flex items-center gap-3 group">
-                <img src="{{ asset('assets/cjp.png') }}" alt="Logo" class="h-10 w-auto group-hover:scale-105 transition-transform duration-300">
+                <img src="{{ asset('assets/cjp.png') }}" alt="Logo CJP" class="h-7 sm:h-9 md:h-10 w-auto max-w-[130px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300">
             </a>
 
             <!-- Desktop Menu Navigation -->
@@ -904,13 +904,15 @@
                 </div>
 
                 <!-- Custom Navigation Arrows & Pagination Dots -->
-                <div class="flex items-center justify-center gap-6 mt-6">
-                    <button class="swiper-button-prev-porto w-11 h-11 rounded-full bg-white/10 hover:bg-white/30 text-white border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-md">
-                        <i class="fa-solid fa-chevron-left text-sm"></i>
+                <div class="flex items-center justify-between sm:justify-center gap-3 sm:gap-8 mt-8 px-4 max-w-sm sm:max-w-md mx-auto">
+                    <button class="swiper-button-prev-porto w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/20 hover:bg-[color:var(--sky)] text-white border border-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-xl shrink-0">
+                        <i class="fa-solid fa-chevron-left text-base sm:text-lg"></i>
                     </button>
-                    <div class="swiper-pagination-portfolio !w-auto flex items-center gap-1.5"></div>
-                    <button class="swiper-button-next-porto w-11 h-11 rounded-full bg-white/10 hover:bg-white/30 text-white border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-md">
-                        <i class="fa-solid fa-chevron-right text-sm"></i>
+
+                    <div class="swiper-pagination-portfolio !w-auto flex items-center justify-center gap-1.5 px-2"></div>
+
+                    <button class="swiper-button-next-porto w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white/20 hover:bg-[color:var(--sky)] text-white border border-white/30 backdrop-blur-md flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-xl shrink-0">
+                        <i class="fa-solid fa-chevron-right text-base sm:text-lg"></i>
                     </button>
                 </div>
             </div>
