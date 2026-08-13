@@ -257,19 +257,19 @@
          class="fixed w-full top-0 z-50 transition-all duration-300">
         <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
             
-            <!-- Logo Branding (Smooth Cross-Fade Dynamic Logo Switcher) -->
-            <a href="#beranda" class="relative flex items-center h-7 sm:h-9 md:h-10 group min-w-[140px] sm:min-w-[180px]">
-                <!-- Regular Logo (cjp.png) shown when scrolled -->
+            <!-- Dynamic Logo Branding: Pixel-Perfect White & Color Logo Switcher -->
+            <a href="#beranda" class="relative flex items-center h-7 sm:h-9 md:h-10 group">
+                <!-- Regular Logo (cjp.png) - Visible when scrolled -->
                 <img src="{{ asset('assets/cjp.png') }}" 
                      alt="Logo PT CJP" 
-                     class="h-7 sm:h-9 md:h-10 w-auto object-contain transition-all duration-500 ease-in-out group-hover:scale-105"
-                     :class="scrolled ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'">
+                     class="h-7 sm:h-9 md:h-10 w-auto object-contain transition-all duration-300 ease-in-out group-hover:scale-105"
+                     :class="scrolled ? 'opacity-100 scale-100 block' : 'opacity-0 scale-95 hidden'">
 
-                <!-- White Logo (cjpputih.png) shown on Jumbotron (when !scrolled) -->
+                <!-- White Logo (cjpputih.png) - Visible when on Jumbotron (!scrolled) -->
                 <img src="{{ asset('assets/cjpputih.png') }}" 
                      alt="Logo PT CJP Putih" 
-                     class="absolute left-0 top-0 h-7 sm:h-9 md:h-10 w-auto object-contain transition-all duration-500 ease-in-out group-hover:scale-105"
-                     :class="!scrolled ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none'">
+                     class="h-7 sm:h-9 md:h-10 w-auto object-contain transition-all duration-300 ease-in-out group-hover:scale-105"
+                     :class="!scrolled ? 'opacity-100 scale-100 block' : 'opacity-0 scale-95 hidden'">
             </a>
 
             <!-- Desktop Menu Navigation -->
