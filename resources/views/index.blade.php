@@ -250,14 +250,29 @@
 </head>
 <body class="font-sans text-[15px] leading-relaxed antialiased text-[color:var(--ink)]">
 
-    <!-- Sticky Navbar Blur Glassmorphic Header (White Background & Regular Logo) -->
+    <!-- Sticky Navbar Blur Glassmorphic Header (White Background, Compact Logo, & Elegant Curved Line Accent) -->
     <nav x-data="{ mobileMenuOpen: false }"
-         class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-xl shadow-md py-3 border-b border-sky-100 text-[color:var(--ink)]">
+         class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-xl shadow-md py-2.5 border-b border-sky-100 text-[color:var(--ink)]">
+        
+        <!-- Curved Gradient Accent Line at Navbar Bottom -->
+        <div class="absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none pointer-events-none h-[4px]">
+            <svg class="w-full h-full" viewBox="0 0 1200 4" preserveAspectRatio="none" fill="none">
+                <path d="M0 0 Q 600 8, 1200 0" stroke="url(#nav-curve-grad)" stroke-width="3" fill="none"/>
+                <defs>
+                    <linearGradient id="nav-curve-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#0ea5e9"/>
+                        <stop offset="50%" stop-color="#14b8a6"/>
+                        <stop offset="100%" stop-color="#10b981"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
         <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
             
-            <!-- Logo Branding (Regular Logo CJP) -->
-            <a href="#beranda" class="flex items-center gap-3 group">
-                <img src="{{ asset('assets/cjp.png') }}" alt="Logo PT CJP" class="h-7 sm:h-9 md:h-10 w-auto max-w-[140px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300">
+            <!-- Logo Branding (Proportional & Compact Desktop Logo CJP) -->
+            <a href="#beranda" class="flex items-center gap-2.5 group">
+                <img src="{{ asset('assets/cjp.png') }}" alt="Logo PT CJP" class="h-5 sm:h-6 md:h-7 w-auto max-w-[110px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300">
             </a>
 
             <!-- Desktop Menu Navigation -->
