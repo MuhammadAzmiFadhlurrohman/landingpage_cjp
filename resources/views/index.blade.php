@@ -18,6 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Swiper.js CDN untuk Carousel 3D Coverflow Portofolio -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <style>
         :root {
             --ink: #0B2A4A;
@@ -33,14 +37,43 @@
 
         body { color: var(--ink); background-color: var(--mist); overflow-x: hidden; }
 
-        .bg-gradient-hero {
-            background:
-                radial-gradient(70% 60% at 85% 10%, rgba(41,171,226,0.18) 0%, rgba(41,171,226,0) 70%),
-                radial-gradient(60% 50% at 10% 90%, rgba(21,184,166,0.15) 0%, rgba(21,184,166,0) 70%),
-                linear-gradient(180deg, rgba(244,250,253,0.95) 0%, rgba(229,244,252,0.90) 60%, rgba(214,239,250,0.95) 100%),
-                url('{{ asset('assets/bghero.jpg') }}');
-            background-size: cover;
-            background-position: center;
+        /* Swiper 3D Coverflow Custom Styling */
+        .portfolio-swiper {
+            width: 100%;
+            padding-top: 1.5rem !important;
+            padding-bottom: 2.5rem !important;
+        }
+        .portfolio-swiper .swiper-slide {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+            opacity: 0.5;
+            transform: scale(0.82);
+            filter: blur(0.5px);
+        }
+        .portfolio-swiper .swiper-slide-active {
+            opacity: 1 !important;
+            transform: scale(1.08) !important;
+            filter: blur(0px) !important;
+            z-index: 30;
+        }
+        .portfolio-swiper .swiper-slide-prev,
+        .portfolio-swiper .swiper-slide-next {
+            opacity: 0.8 !important;
+            transform: scale(0.92) !important;
+            filter: blur(0px) !important;
+            z-index: 20;
+        }
+        .swiper-pagination-portfolio .swiper-pagination-bullet {
+            background: rgba(255, 255, 255, 0.4);
+            opacity: 1;
+            width: 10px;
+            height: 10px;
+            transition: all 0.3s ease;
+        }
+        .swiper-pagination-portfolio .swiper-pagination-bullet-active {
+            background: var(--sky);
+            width: 28px;
+            border-radius: 999px;
+            box-shadow: 0 0 10px rgba(41, 171, 226, 0.6);
         }
 
         .bg-gradient-produk {
@@ -722,7 +755,7 @@
     </section>
 
     <!-- Section Portofolio Proyek -->
-    <section id="portofolio" class="relative py-24 px-6 border-t border-sky-800/40 overflow-hidden" style="background: linear-gradient(135deg, #081F38 0%, #0B2A4A 40%, #11426C 75%, #1C8AC0 100%);">
+    <section id="portofolio" class="relative py-24 px-4 sm:px-6 border-t border-sky-800/40 overflow-hidden" style="background: linear-gradient(135deg, #081F38 0%, #0B2A4A 40%, #11426C 75%, #1C8AC0 100%);">
         
         <!-- Subtle Background Glows & Pattern -->
         <div class="absolute inset-0 pointer-events-none opacity-15" style="background-image: radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px); background-size: 24px 24px;"></div>
@@ -730,7 +763,7 @@
         <div class="absolute -bottom-28 -left-28 w-96 h-96 rounded-full bg-teal-400/15 blur-3xl pointer-events-none"></div>
 
         <div class="container mx-auto relative z-10">
-            <div class="reveal text-center mb-16">
+            <div class="reveal text-center mb-10 sm:mb-14">
                 <span class="inline-flex items-center gap-2 font-display font-bold text-xs uppercase tracking-widest text-sky-200 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/20 shadow-sm justify-center mb-3">
                     <span class="w-2 h-2 rounded-full bg-sky-400"></span>
                     Rekam Jejak
@@ -828,43 +861,58 @@
                 ];
             @endphp
 
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6 lg:gap-8">
-                @foreach($customPortfolios as $porto)
-                @php
-                    $delay = (($loop->iteration % 3) * 120) . 'ms';
-                @endphp
-                <div class="reveal shine-card card-hover bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl border border-white/50 p-4 sm:p-7 flex flex-col justify-between relative overflow-hidden shadow-2xl group" style="transition-delay: {{ $delay }};">
-                    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[color:var(--sky)] via-teal-400 to-[color:var(--sky-deep)] transition-all duration-300 group-hover:h-2.5"></div>
+            <!-- Swiper 3D Coverflow Carousel Container -->
+            <div class="reveal relative max-w-6xl mx-auto">
+                <div class="swiper portfolio-swiper py-10">
+                    <div class="swiper-wrapper items-stretch">
+                        @foreach($customPortfolios as $porto)
+                        <div class="swiper-slide !w-[290px] sm:!w-[360px] md:!w-[400px] h-auto">
+                            <div class="shine-card bg-white/95 backdrop-blur-md rounded-3xl border border-white/50 p-6 sm:p-7 flex flex-col justify-between h-full relative overflow-hidden shadow-2xl group">
+                                <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-[color:var(--sky)] via-teal-400 to-[color:var(--sky-deep)] transition-all duration-300 group-hover:h-2.5"></div>
 
-                    <div>
-                        <div class="flex flex-wrap items-center justify-between gap-1 mb-2.5 sm:mb-4">
-                            <span class="text-[9px] sm:text-xs font-bold uppercase tracking-wider text-[color:var(--sky-deep)] bg-sky-100/90 px-2 py-0.5 sm:px-3 sm:py-1 rounded-full border border-sky-200 shadow-2xs">
-                                {{ $porto['jenis_layanan'] }}
-                            </span>
-                            <span class="text-[9px] sm:text-xs font-bold text-gray-600 flex items-center gap-1 bg-gray-100/80 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg border border-gray-200">
-                                <i class="fa-solid fa-location-dot text-[color:var(--sky)] group-hover:scale-125 transition-transform duration-300"></i>
-                                {{ $porto['kota'] }}
-                            </span>
+                                <div>
+                                    <div class="flex items-center justify-between gap-2 mb-4">
+                                        <span class="text-xs font-bold uppercase tracking-wider text-[color:var(--sky-deep)] bg-sky-100/90 px-3 py-1 rounded-full border border-sky-200 shadow-2xs">
+                                            {{ $porto['jenis_layanan'] }}
+                                        </span>
+                                        <span class="text-xs font-bold text-gray-600 flex items-center gap-1.5 bg-gray-100/80 px-2.5 py-1 rounded-lg border border-gray-200">
+                                            <i class="fa-solid fa-location-dot text-[color:var(--sky)]"></i>
+                                            {{ $porto['kota'] }}
+                                        </span>
+                                    </div>
+
+                                    <h3 class="font-display text-base sm:text-lg font-extrabold text-[color:var(--ink)] mb-3 leading-snug group-hover:text-[color:var(--sky-deep)] transition-colors duration-300">
+                                        {{ $porto['nama_perusahaan'] }}
+                                    </h3>
+
+                                    <p class="text-xs font-medium text-gray-500 mb-6 flex items-center gap-1.5">
+                                        <i class="fa-solid fa-map-location text-sky-400"></i>
+                                        <span>Wilayah: <strong class="text-gray-700 font-semibold">{{ $porto['provinsi'] }}</strong></span>
+                                    </p>
+                                </div>
+
+                                <div class="border-t border-sky-100 pt-4 flex justify-between items-center text-xs">
+                                    <span class="text-gray-500 font-medium">Sektor Proyek:</span>
+                                    <span class="bg-sky-50 text-[color:var(--sky-deep)] px-3 py-1.5 rounded-lg font-bold border border-sky-200 shadow-2xs group-hover:border-sky-300 transition-colors duration-300">
+                                        {{ $porto['komoditi'] }}
+                                    </span>
+                                </div>
+                            </div>
                         </div>
-
-                        <h3 class="font-display text-xs sm:text-lg font-extrabold text-[color:var(--ink)] mb-2 sm:mb-3 leading-snug group-hover:text-[color:var(--sky-deep)] transition-colors duration-300">
-                            {{ $porto['nama_perusahaan'] }}
-                        </h3>
-
-                        <p class="text-[10px] sm:text-xs font-medium text-gray-500 mb-3 sm:mb-6 flex items-center gap-1">
-                            <i class="fa-solid fa-map-location text-sky-400 hidden sm:inline"></i>
-                            <span>Wilayah: <strong class="text-gray-700 font-semibold">{{ $porto['provinsi'] }}</strong></span>
-                        </p>
-                    </div>
-
-                    <div class="border-t border-sky-100 pt-2.5 sm:pt-4 flex justify-between items-center text-[9px] sm:text-xs">
-                        <span class="text-gray-500 font-medium hidden sm:inline">Sektor Proyek:</span>
-                        <span class="bg-sky-50 text-[color:var(--sky-deep)] px-2 py-1 sm:px-3 sm:py-1.5 rounded-lg font-bold border border-sky-200 shadow-2xs group-hover:border-sky-300 transition-colors duration-300 w-full sm:w-auto text-center">
-                            {{ $porto['komoditi'] }}
-                        </span>
+                        @endforeach
                     </div>
                 </div>
-                @endforeach
+
+                <!-- Custom Navigation Arrows & Pagination Dots -->
+                <div class="flex items-center justify-center gap-6 mt-6">
+                    <button class="swiper-button-prev-porto w-11 h-11 rounded-full bg-white/10 hover:bg-white/30 text-white border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-md">
+                        <i class="fa-solid fa-chevron-left text-sm"></i>
+                    </button>
+                    <div class="swiper-pagination-portfolio !w-auto flex items-center gap-1.5"></div>
+                    <button class="swiper-button-next-porto w-11 h-11 rounded-full bg-white/10 hover:bg-white/30 text-white border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 active:scale-95 shadow-md">
+                        <i class="fa-solid fa-chevron-right text-sm"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -1247,6 +1295,37 @@
 
             window.addEventListener("scroll", revealOnScroll);
             revealOnScroll(); // Trigger initial check on load
+
+            // Swiper 3D Coverflow Carousel Initialization
+            if (typeof Swiper !== 'undefined') {
+                new Swiper('.portfolio-swiper', {
+                    effect: 'coverflow',
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: 'auto',
+                    loop: true,
+                    speed: 500,
+                    coverflowEffect: {
+                        rotate: 15,
+                        stretch: 0,
+                        depth: 120,
+                        modifier: 1,
+                        slideShadows: false,
+                    },
+                    autoplay: {
+                        delay: 3500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: '.swiper-pagination-portfolio',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next-porto',
+                        prevEl: '.swiper-button-prev-porto',
+                    },
+                });
+            }
         });
     </script>
 </body>
