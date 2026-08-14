@@ -471,56 +471,60 @@
                 </div>
 
                 <!-- Hero Visual Showcase Card (Right 5 Cols) -->
-                <div class="lg:col-span-5 reveal active delay-200 relative mt-6 lg:mt-0">
-                    <div class="shine-card bg-white/10 backdrop-blur-2xl p-6 sm:p-7 rounded-3xl border border-white/20 text-white shadow-2xl relative z-10 overflow-hidden">
+                <div class="lg:col-span-5 reveal active delay-200 relative mt-6 lg:mt-0 max-w-lg mx-auto lg:max-w-none w-full">
+                    <div class="shine-card bg-white/10 backdrop-blur-2xl p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-white/20 text-white shadow-2xl relative z-10 overflow-hidden">
                         
                         <!-- Header Bar -->
-                        <div class="flex justify-between items-center pb-4 mb-5 border-b border-white/15">
-                            <div class="flex items-center gap-2">
-                                <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
-                                <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
-                                <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
-                                <span class="text-xs font-bold text-sky-200 ml-2 font-mono">cjp-fiber-network</span>
+                        <div class="flex justify-between items-center pb-2.5 mb-3.5 border-b border-white/15">
+                            <div class="flex items-center gap-1.5">
+                                <div class="w-2.5 h-2.5 rounded-full bg-rose-500/80"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-amber-500/80"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-emerald-500/80"></div>
+                                <span class="text-[11px] font-bold text-sky-200 ml-1.5 font-mono">cjp-fiber-network</span>
                             </div>
-                            <span class="px-2.5 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 text-[10px] font-extrabold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+                            <span class="px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 text-[9px] font-extrabold uppercase tracking-wider flex items-center gap-1 shadow-sm">
                                 <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
                                 Dedicated Fiber
                             </span>
                         </div>
 
                         <!-- Speed & MRC Metrics Display -->
-                        <div class="grid grid-cols-2 gap-3.5 mb-5">
-                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15 hover:border-cyan-400/40 transition-all">
-                                <div class="flex items-center justify-between mb-1">
-                                    <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Kapasitas</span>
-                                    <i class="fa-solid fa-gauge-high text-emerald-400 text-xs animate-pulse"></i>
+                        <div class="grid grid-cols-2 gap-2.5 sm:gap-3 mb-3">
+                            <div class="bg-white/10 backdrop-blur-md p-2.5 sm:p-3 rounded-xl sm:rounded-2xl border border-white/15 hover:border-cyan-400/40 transition-all">
+                                <div class="flex items-center justify-between mb-0.5">
+                                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-sky-200">Kapasitas</span>
+                                    <i class="fa-solid fa-gauge-high text-emerald-400 text-[10px] animate-pulse"></i>
                                 </div>
-                                <div class="font-display font-extrabold text-xl sm:text-2xl text-white">Up to 10 <span class="text-xs font-semibold text-sky-300">Mbps</span></div>
-                                <div class="mt-2 w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                                <div class="font-display font-extrabold text-base sm:text-lg text-white tracking-tight flex items-baseline gap-1 whitespace-nowrap">
+                                    <span>Up to 10</span> <span class="text-[10px] sm:text-xs font-semibold text-sky-300">Mbps</span>
+                                </div>
+                                <div class="mt-1.5 w-full bg-white/10 rounded-full h-1 overflow-hidden">
                                     <div class="bg-gradient-to-r from-teal-400 to-emerald-400 h-full rounded-full w-full animate-pulse"></div>
                                 </div>
                             </div>
-                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15 hover:border-cyan-400/40 transition-all">
-                                <div class="flex items-center justify-between mb-1">
-                                    <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Harga MRC</span>
-                                    <i class="fa-solid fa-tags text-sky-300 text-xs animate-pulse"></i>
+                            <div class="bg-white/10 backdrop-blur-md p-2.5 sm:p-3 rounded-xl sm:rounded-2xl border border-white/15 hover:border-cyan-400/40 transition-all">
+                                <div class="flex items-center justify-between mb-0.5">
+                                    <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-sky-200">Harga MRC</span>
+                                    <i class="fa-solid fa-tags text-sky-300 text-[10px] animate-pulse"></i>
                                 </div>
-                                <div class="font-display font-extrabold text-xl sm:text-2xl text-white">Rp 612.500 <span class="text-[10px] font-semibold text-sky-300">/bln</span></div>
-                                <div class="mt-2 w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                                <div class="font-display font-extrabold text-base sm:text-lg text-white tracking-tight flex items-baseline gap-0.5 whitespace-nowrap">
+                                    <span>Rp 612.500</span><span class="text-[9px] sm:text-[10px] font-semibold text-sky-300">/bln</span>
+                                </div>
+                                <div class="mt-1.5 w-full bg-white/10 rounded-full h-1 overflow-hidden">
                                     <div class="bg-gradient-to-r from-sky-400 to-cyan-400 h-full rounded-full w-full animate-pulse"></div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Animated Signal Wave Graphic -->
-                        <div class="bg-black/30 p-4 rounded-2xl text-white mb-4 border border-white/10 relative overflow-hidden">
-                            <div class="flex justify-between items-center text-xs mb-2 relative z-10">
-                                <span class="font-semibold text-sky-200 flex items-center gap-1.5">
-                                    <i class="fa-solid fa-bolt text-amber-300 text-[11px]"></i> Latency & Stability
+                        <div class="bg-black/30 p-2.5 sm:p-3 rounded-xl sm:rounded-2xl text-white mb-2.5 border border-white/10 relative overflow-hidden">
+                            <div class="flex justify-between items-center text-[10px] sm:text-[11px] mb-1 relative z-10">
+                                <span class="font-semibold text-sky-200 flex items-center gap-1">
+                                    <i class="fa-solid fa-bolt text-amber-300 text-[10px]"></i> Latency & Stability
                                 </span>
-                                <span class="font-bold text-emerald-400 font-mono">&lt; 1.8 ms (Ultra Low Ping)</span>
+                                <span class="font-bold text-emerald-400 font-mono text-[10px] sm:text-[11px]">&lt; 1.8 ms (Ultra Low)</span>
                             </div>
-                            <svg class="w-full h-14" viewBox="0 0 300 50" fill="none">
+                            <svg class="w-full h-10" viewBox="0 0 300 45" fill="none">
                                 <defs>
                                     <linearGradient id="semi-dark-hero-grad" x1="0" y1="0" x2="0" y2="1">
                                         <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
@@ -531,27 +535,27 @@
                                         <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.0"/>
                                     </linearGradient>
                                 </defs>
-                                <path d="M0 35 Q 45 15, 90 32 T 180 25 T 250 18 T 300 30 L 300 50 L 0 50 Z" fill="url(#wave-grad-secondary)"/>
-                                <path d="M0 35 Q 45 15, 90 32 T 180 25 T 250 18 T 300 30" stroke="#2dd4bf" stroke-width="2" fill="none" class="wave-line-2" opacity="0.75"/>
+                                <path d="M0 32 Q 45 14, 90 30 T 180 23 T 250 16 T 300 28 L 300 45 L 0 45 Z" fill="url(#wave-grad-secondary)"/>
+                                <path d="M0 32 Q 45 14, 90 30 T 180 23 T 250 16 T 300 28" stroke="#2dd4bf" stroke-width="1.8" fill="none" class="wave-line-2" opacity="0.75"/>
                                 
-                                <path d="M0 28 Q 35 8, 70 28 T 140 18 T 210 32 T 270 12 T 300 22 L 300 50 L 0 50 Z" fill="url(#semi-dark-hero-grad)"/>
-                                <path d="M0 28 Q 35 8, 70 28 T 140 18 T 210 32 T 270 12 T 300 22" stroke="#38bdf8" stroke-width="2.5" fill="none" class="wave-line-1"/>
+                                <path d="M0 25 Q 35 7, 70 25 T 140 16 T 210 28 T 270 10 T 300 20 L 300 45 L 0 45 Z" fill="url(#semi-dark-hero-grad)"/>
+                                <path d="M0 25 Q 35 7, 70 25 T 140 16 T 210 28 T 270 10 T 300 20" stroke="#38bdf8" stroke-width="2" fill="none" class="wave-line-1"/>
 
                                 <!-- Glowing Signal Nodes -->
-                                <circle cx="70" cy="28" r="3" fill="#38bdf8" class="pulse-node" style="transform-origin: 70px 28px;"/>
-                                <circle cx="140" cy="18" r="3.5" fill="#2dd4bf" class="pulse-node" style="transform-origin: 140px 18px; animation-delay: 0.6s;"/>
-                                <circle cx="210" cy="32" r="3" fill="#38bdf8" class="pulse-node" style="transform-origin: 210px 32px; animation-delay: 1.2s;"/>
-                                <circle cx="270" cy="12" r="3.5" fill="#38bdf8" class="pulse-node" style="transform-origin: 270px 12px; animation-delay: 0.3s;"/>
+                                <circle cx="70" cy="25" r="2.5" fill="#38bdf8" class="pulse-node" style="transform-origin: 70px 25px;"/>
+                                <circle cx="140" cy="16" r="3" fill="#2dd4bf" class="pulse-node" style="transform-origin: 140px 16px; animation-delay: 0.6s;"/>
+                                <circle cx="210" cy="28" r="2.5" fill="#38bdf8" class="pulse-node" style="transform-origin: 210px 28px; animation-delay: 1.2s;"/>
+                                <circle cx="270" cy="10" r="3" fill="#38bdf8" class="pulse-node" style="transform-origin: 270px 10px; animation-delay: 0.3s;"/>
                             </svg>
                         </div>
 
                         <!-- APJATEL Status Box -->
-                        <div class="flex items-center justify-between text-xs text-sky-100 bg-white/10 p-3 rounded-xl border border-white/15">
-                            <div class="flex items-center gap-2">
-                                <i class="fa-solid fa-shield-halved text-emerald-400 text-sm"></i>
-                                <span class="font-bold text-white">Lisensi Resmi APJATEL</span>
+                        <div class="flex items-center justify-between text-[11px] text-sky-100 bg-white/10 px-3 py-2 rounded-xl border border-white/15">
+                            <div class="flex items-center gap-1.5">
+                                <i class="fa-solid fa-shield-halved text-emerald-400 text-xs"></i>
+                                <span class="font-bold text-white text-[11px]">Lisensi Resmi APJATEL</span>
                             </div>
-                            <span class="text-[11px] font-extrabold text-emerald-300 uppercase tracking-wider">Certified</span>
+                            <span class="text-[10px] font-extrabold text-emerald-300 uppercase tracking-wider">Certified</span>
                         </div>
 
                     </div>
