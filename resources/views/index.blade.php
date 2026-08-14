@@ -101,13 +101,15 @@
         }
 
         .bg-gradient-produk {
-            background:
+            background-image:
                 radial-gradient(60% 55% at 85% 10%, rgba(41,171,226,0.12) 0%, rgba(41,171,226,0) 60%),
                 radial-gradient(50% 50% at 10% 90%, rgba(21,184,166,0.10) 0%, rgba(21,184,166,0) 60%),
-                linear-gradient(180deg, #FFFFFF 0%, rgba(244,250,253,0.90) 100%),
+                linear-gradient(180deg, rgba(255,255,255,0.78) 0%, rgba(244,250,253,0.85) 100%),
                 url('{{ asset('assets/bgproduk.jpg') }}');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .bg-card-produk {
@@ -684,7 +686,91 @@
 
     <!-- Section Katalog Produk Layanan -->
     <section id="produk" class="pt-24 pb-28 md:pb-36 bg-gradient-produk px-6 relative overflow-hidden">
-        <div class="container mx-auto max-w-6xl">
+        
+        <!-- Fixed Global World Network Silhouette & Cyber Fiber Topology Overlay -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden z-0 opacity-40">
+            <svg class="w-full h-full object-cover" viewBox="0 0 1600 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <linearGradient id="worldLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#0284c7" stop-opacity="0.2"/>
+                        <stop offset="50%" stop-color="#0ea5e9" stop-opacity="0.6"/>
+                        <stop offset="100%" stop-color="#14b8a6" stop-opacity="0.3"/>
+                    </linearGradient>
+                    <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.4"/>
+                    </linearGradient>
+                </defs>
+
+                <!-- Subtle Global Meridian & Latitude Ellipses (Globe Matrix) -->
+                <g stroke="#38bdf8" stroke-opacity="0.12" stroke-width="1" fill="none">
+                    <ellipse cx="800" cy="400" rx="720" ry="340" />
+                    <ellipse cx="800" cy="400" rx="540" ry="340" stroke-dasharray="6,6" />
+                    <ellipse cx="800" cy="400" rx="360" ry="340" />
+                    <ellipse cx="800" cy="400" rx="180" ry="340" stroke-dasharray="4,4" />
+                    <line x1="80" y1="400" x2="1520" y2="400" stroke-dasharray="8,8" />
+                    <line x1="160" y1="240" x2="1440" y2="240" stroke-opacity="0.08" />
+                    <line x1="160" y1="560" x2="1440" y2="560" stroke-opacity="0.08" />
+                </g>
+
+                <!-- Global World Continents Mesh Nodes -->
+                <!-- North America -->
+                <g fill="#0284c7" opacity="0.35">
+                    <circle cx="340" cy="220" r="3.5"/><circle cx="390" cy="240" r="3"/><circle cx="440" cy="230" r="4"/><circle cx="310" cy="280" r="3.5"/><circle cx="380" cy="300" r="4.5"/><circle cx="450" cy="310" r="5"/><circle cx="360" cy="360" r="3.5"/><circle cx="420" cy="370" r="3"/>
+                </g>
+                <!-- South America -->
+                <g fill="#0284c7" opacity="0.35">
+                    <circle cx="480" cy="470" r="4"/><circle cx="520" cy="510" r="4.5"/><circle cx="560" cy="550" r="4"/><circle cx="500" cy="620" r="3.5"/><circle cx="480" cy="690" r="3"/>
+                </g>
+                <!-- Europe & Africa -->
+                <g fill="#0284c7" opacity="0.35">
+                    <circle cx="780" cy="220" r="4.5"/><circle cx="820" cy="200" r="4"/><circle cx="850" cy="230" r="4"/><circle cx="800" cy="270" r="3.5"/><circle cx="860" cy="280" r="4"/>
+                    <circle cx="790" cy="380" r="4"/><circle cx="840" cy="420" r="4.5"/><circle cx="890" cy="460" r="4"/><circle cx="830" cy="540" r="3.5"/><circle cx="860" cy="620" r="3"/>
+                </g>
+                <!-- Asia & East Asia -->
+                <g fill="#0284c7" opacity="0.35">
+                    <circle cx="980" cy="230" r="4"/><circle cx="1060" cy="210" r="4.5"/><circle cx="1140" cy="230" r="4"/><circle cx="1220" cy="250" r="4.5"/><circle cx="1270" cy="280" r="5"/>
+                    <circle cx="1020" cy="320" r="4"/><circle cx="1100" cy="330" r="4.5"/><circle cx="1180" cy="340" r="5"/><circle cx="1240" cy="360" r="4.5"/>
+                </g>
+                <!-- Indonesia / Priangan & Southeast Asia Priority Gateway -->
+                <g fill="#0ea5e9">
+                    <circle cx="1140" cy="440" r="4" fill="#0284c7"/>
+                    <circle cx="1180" cy="470" r="4.5" fill="#14b8a6"/>
+                    <circle cx="1210" cy="510" r="6" fill="#0284c7" class="animate-pulse"/>
+                    <circle cx="1250" cy="520" r="5" fill="#0ea5e9"/>
+                    <circle cx="1280" cy="530" r="4" fill="#14b8a6"/>
+                </g>
+                <!-- Australia -->
+                <g fill="#0284c7" opacity="0.35">
+                    <circle cx="1320" cy="600" r="4.5"/><circle cx="1380" cy="620" r="4"/><circle cx="1340" cy="680" r="3.5"/><circle cx="1400" cy="670" r="4"/>
+                </g>
+
+                <!-- Major Global Submarine Fiber Optical Cable Paths (Interconnecting Continents) -->
+                <g stroke="url(#arcGrad)" stroke-width="1.4" stroke-dasharray="6,4" fill="none" opacity="0.65">
+                    <!-- Trans-Pacific: US West -> Tokyo -> Jakarta -->
+                    <path d="M450,310 Q800,120 1270,280" />
+                    <path d="M1270,280 Q1240,400 1210,510" />
+                    <!-- Trans-Atlantic: US East -> London/Europe -->
+                    <path d="M450,310 Q620,180 780,220" />
+                    <!-- Europe -> Middle East -> Singapore / Jakarta -->
+                    <path d="M780,220 Q950,360 1210,510" />
+                    <!-- Indonesia -> Australia -->
+                    <path d="M1210,510 Q1270,580 1380,620" />
+                    <!-- Americas North -> South -->
+                    <path d="M450,310 Q470,400 520,510" />
+                </g>
+
+                <!-- Glowing Core Hub Beacons -->
+                <!-- Indonesia / Bandung Priangan Hub -->
+                <circle cx="1210" cy="510" r="16" fill="none" stroke="#0ea5e9" stroke-width="1.5" opacity="0.6" class="animate-ping" style="transform-origin: 1210px 510px; animation-duration: 3s;" />
+                <!-- Global Gateway Hub Tokyo -->
+                <circle cx="1270" cy="280" r="12" fill="none" stroke="#14b8a6" stroke-width="1.2" opacity="0.5" class="animate-ping" style="transform-origin: 1270px 280px; animation-duration: 4s;" />
+                <!-- Global Gateway Hub London -->
+                <circle cx="780" cy="220" r="12" fill="none" stroke="#0284c7" stroke-width="1.2" opacity="0.5" class="animate-ping" style="transform-origin: 780px 220px; animation-duration: 4.5s;" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto max-w-6xl relative z-10">
             <div class="reveal text-center mb-16">
                 <span class="eyebrow justify-center mb-3">Solusi & Infrastruktur</span>
                 <h2 class="font-display text-3xl md:text-4xl font-extrabold text-[color:var(--ink)] tracking-tight">Katalog Produk Layanan</h2>
