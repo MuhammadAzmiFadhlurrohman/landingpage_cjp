@@ -9,7 +9,11 @@
     <!-- Favicon & Tab Logo -->
     <link rel="icon" type="image/png" href="{{ asset('assets/cjp-icon.png') }}">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/apple-touch-icon.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('assets/cjp-icon-192.png') }}">
+    <meta name="apple-mobile-web-app-title" content="CJP">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#0B2A4A">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -293,7 +297,7 @@
             
             <!-- Logo Branding (Proportional & Compact Desktop Logo CJP) -->
             <a href="#beranda" class="flex items-center gap-2.5 group">
-                <img src="{{ asset('assets/cjp.png') }}" alt="Logo PT CJP" class="h-5 sm:h-6 md:h-7 w-auto max-w-[110px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300">
+                <img src="{{ asset('assets/cjp.png') }}" alt="Logo PT CJP" class="h-6 sm:h-7 md:h-8 w-auto max-w-[130px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300" loading="eager">
             </a>
 
             <!-- Desktop Menu Navigation -->
@@ -484,26 +488,26 @@
                             </span>
                         </div>
 
-                        <!-- Speed Metrics Display -->
+                        <!-- Speed & MRC Metrics Display -->
                         <div class="grid grid-cols-2 gap-3.5 mb-5">
                             <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15 hover:border-cyan-400/40 transition-all">
                                 <div class="flex items-center justify-between mb-1">
-                                    <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Download</span>
-                                    <i class="fa-solid fa-arrow-down text-emerald-400 text-xs animate-bounce" style="animation-duration: 2s;"></i>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Kapasitas</span>
+                                    <i class="fa-solid fa-gauge-high text-emerald-400 text-xs animate-pulse"></i>
                                 </div>
-                                <div class="font-display font-extrabold text-2xl text-white">998.4 <span class="text-xs font-semibold text-sky-300">Mbps</span></div>
+                                <div class="font-display font-extrabold text-xl sm:text-2xl text-white">Up to 10 <span class="text-xs font-semibold text-sky-300">Mbps</span></div>
                                 <div class="mt-2 w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
-                                    <div class="bg-gradient-to-r from-teal-400 to-emerald-400 h-full rounded-full w-[96%] animate-pulse"></div>
+                                    <div class="bg-gradient-to-r from-teal-400 to-emerald-400 h-full rounded-full w-full animate-pulse"></div>
                                 </div>
                             </div>
                             <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15 hover:border-cyan-400/40 transition-all">
                                 <div class="flex items-center justify-between mb-1">
-                                    <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Upload</span>
-                                    <i class="fa-solid fa-arrow-up text-sky-300 text-xs animate-bounce" style="animation-duration: 2s; animation-delay: 0.5s;"></i>
+                                    <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Harga MRC</span>
+                                    <i class="fa-solid fa-tags text-sky-300 text-xs animate-pulse"></i>
                                 </div>
-                                <div class="font-display font-extrabold text-2xl text-white">998.1 <span class="text-xs font-semibold text-sky-300">Mbps</span></div>
+                                <div class="font-display font-extrabold text-xl sm:text-2xl text-white">Rp 612.500 <span class="text-[10px] font-semibold text-sky-300">/bln</span></div>
                                 <div class="mt-2 w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
-                                    <div class="bg-gradient-to-r from-sky-400 to-cyan-400 h-full rounded-full w-[95%] animate-pulse"></div>
+                                    <div class="bg-gradient-to-r from-sky-400 to-cyan-400 h-full rounded-full w-full animate-pulse"></div>
                                 </div>
                             </div>
                         </div>
@@ -882,7 +886,7 @@
                 $clientList = [
                     [
                         'nama' => 'Dinas Komunikasi dan Informatika (Diskominfo)',
-                        'gambar' => 'diskominfo.jfif',
+                        'gambar' => 'diskominfo.png',
                         'scale'  => 'scale-[1.55] sm:scale-[1.7]',
                     ],
                     [
@@ -1165,7 +1169,7 @@
             <!-- Col 1: Brand Info -->
             <div class="space-y-4 col-span-2 md:col-span-1">
                 <div class="flex items-center">
-                    <img src="{{ asset('assets/cjp.png') }}" alt="Logo" class="h-9 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity duration-300">
+                    <img src="{{ asset('assets/cjpputih.png') }}" alt="Logo PT CJP" class="h-8 sm:h-9 w-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300">
                 </div>
                 <p class="text-xs text-gray-400 leading-relaxed">
                     Penyedia infrastruktur Internet Private Network yang cepat, terpercaya, dan aman untuk menjamin kelancaran konektivitas digital Anda.
