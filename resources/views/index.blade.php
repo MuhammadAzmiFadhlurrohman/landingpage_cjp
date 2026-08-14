@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CJP - Koneksi Cepat, Stabil & Dedicated</title>
+    <title>PT Connecti Jelajah Priangan (CJP) - Solusi Jaringan & Infrastruktur Internet</title>
     <meta name="description" content="Penyedia layanan Internet Private Network berkualitas tinggi, cepat, dan terpercaya untuk bisnis dan personal.">
+    
+    <!-- Favicon & Tab Logo -->
+    <link rel="icon" type="image/png" href="{{ asset('assets/cjp-icon.png') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset('assets/cjp-icon-192.png') }}">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -166,14 +171,30 @@
             50% { transform: translateY(10px); }
         }
 
-        /* Dotted animated SVG data line */
-        .connect-line {
-            stroke-dasharray: 6 10;
+        /* Dotted animated SVG data line & wave flows */
+        .connect-line,
+        .wave-line-1 {
+            stroke-dasharray: 7 9;
             stroke-linecap: round;
-            animation: dashFlow 12s linear infinite;
+            animation: dashFlow 10s linear infinite;
+        }
+        .wave-line-2 {
+            stroke-dasharray: 4 6;
+            stroke-linecap: round;
+            animation: dashFlowRev 8s linear infinite;
         }
         @keyframes dashFlow {
             to { stroke-dashoffset: -160; }
+        }
+        @keyframes dashFlowRev {
+            to { stroke-dashoffset: 160; }
+        }
+        .pulse-node {
+            animation: pulseNode 2s ease-in-out infinite;
+        }
+        @keyframes pulseNode {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.35); opacity: 1; filter: drop-shadow(0 0 5px #38bdf8); }
         }
 
         /* Glassmorphism Shine Sweep Effect */
@@ -455,47 +476,68 @@
                                 <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
                                 <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
                                 <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
-                                <span class="text-xs font-bold text-sky-200 ml-2 font-mono">cjp-network-monitor</span>
+                                <span class="text-xs font-bold text-sky-200 ml-2 font-mono">cjp-fiber-network</span>
                             </div>
-                            <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-extrabold uppercase tracking-wider flex items-center gap-1.5">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                                Live System
+                            <span class="px-2.5 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 text-[10px] font-extrabold uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                                Dedicated Fiber
                             </span>
                         </div>
 
                         <!-- Speed Metrics Display -->
                         <div class="grid grid-cols-2 gap-3.5 mb-5">
-                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15">
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15 hover:border-cyan-400/40 transition-all">
                                 <div class="flex items-center justify-between mb-1">
                                     <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Download</span>
-                                    <i class="fa-solid fa-arrow-down text-emerald-400 text-xs"></i>
+                                    <i class="fa-solid fa-arrow-down text-emerald-400 text-xs animate-bounce" style="animation-duration: 2s;"></i>
                                 </div>
                                 <div class="font-display font-extrabold text-2xl text-white">998.4 <span class="text-xs font-semibold text-sky-300">Mbps</span></div>
+                                <div class="mt-2 w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-teal-400 to-emerald-400 h-full rounded-full w-[96%] animate-pulse"></div>
+                                </div>
                             </div>
-                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15">
+                            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/15 hover:border-cyan-400/40 transition-all">
                                 <div class="flex items-center justify-between mb-1">
                                     <span class="text-[10px] font-bold uppercase tracking-wider text-sky-200">Upload</span>
-                                    <i class="fa-solid fa-arrow-up text-sky-300 text-xs"></i>
+                                    <i class="fa-solid fa-arrow-up text-sky-300 text-xs animate-bounce" style="animation-duration: 2s; animation-delay: 0.5s;"></i>
                                 </div>
                                 <div class="font-display font-extrabold text-2xl text-white">998.1 <span class="text-xs font-semibold text-sky-300">Mbps</span></div>
+                                <div class="mt-2 w-full bg-white/10 rounded-full h-1.5 overflow-hidden">
+                                    <div class="bg-gradient-to-r from-sky-400 to-cyan-400 h-full rounded-full w-[95%] animate-pulse"></div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Live Signal Wave Graphic -->
-                        <div class="bg-black/30 p-4 rounded-2xl text-white mb-4 border border-white/10">
-                            <div class="flex justify-between items-center text-xs mb-2">
-                                <span class="font-semibold text-sky-200">Latency & Stability</span>
+                        <!-- Animated Signal Wave Graphic -->
+                        <div class="bg-black/30 p-4 rounded-2xl text-white mb-4 border border-white/10 relative overflow-hidden">
+                            <div class="flex justify-between items-center text-xs mb-2 relative z-10">
+                                <span class="font-semibold text-sky-200 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-bolt text-amber-300 text-[11px]"></i> Latency & Stability
+                                </span>
                                 <span class="font-bold text-emerald-400 font-mono">&lt; 1.8 ms (Ultra Low Ping)</span>
                             </div>
-                            <svg class="w-full h-12" viewBox="0 0 300 50" fill="none">
-                                <path d="M0 30 Q 30 10, 60 30 T 120 20 T 180 35 T 240 15 T 300 25" stroke="#38bdf8" stroke-width="3" fill="none" class="connect-line"/>
-                                <path d="M0 30 Q 30 10, 60 30 T 120 20 T 180 35 T 240 15 T 300 25 L 300 50 L 0 50 Z" fill="url(#semi-dark-hero-grad)" opacity="0.3"/>
+                            <svg class="w-full h-14" viewBox="0 0 300 50" fill="none">
                                 <defs>
                                     <linearGradient id="semi-dark-hero-grad" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stop-color="#38bdf8"/>
-                                        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+                                        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+                                        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0"/>
+                                    </linearGradient>
+                                    <linearGradient id="wave-grad-secondary" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.25"/>
+                                        <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0.0"/>
                                     </linearGradient>
                                 </defs>
+                                <path d="M0 35 Q 45 15, 90 32 T 180 25 T 250 18 T 300 30 L 300 50 L 0 50 Z" fill="url(#wave-grad-secondary)"/>
+                                <path d="M0 35 Q 45 15, 90 32 T 180 25 T 250 18 T 300 30" stroke="#2dd4bf" stroke-width="2" fill="none" class="wave-line-2" opacity="0.75"/>
+                                
+                                <path d="M0 28 Q 35 8, 70 28 T 140 18 T 210 32 T 270 12 T 300 22 L 300 50 L 0 50 Z" fill="url(#semi-dark-hero-grad)"/>
+                                <path d="M0 28 Q 35 8, 70 28 T 140 18 T 210 32 T 270 12 T 300 22" stroke="#38bdf8" stroke-width="2.5" fill="none" class="wave-line-1"/>
+
+                                <!-- Glowing Signal Nodes -->
+                                <circle cx="70" cy="28" r="3" fill="#38bdf8" class="pulse-node" style="transform-origin: 70px 28px;"/>
+                                <circle cx="140" cy="18" r="3.5" fill="#2dd4bf" class="pulse-node" style="transform-origin: 140px 18px; animation-delay: 0.6s;"/>
+                                <circle cx="210" cy="32" r="3" fill="#38bdf8" class="pulse-node" style="transform-origin: 210px 32px; animation-delay: 1.2s;"/>
+                                <circle cx="270" cy="12" r="3.5" fill="#38bdf8" class="pulse-node" style="transform-origin: 270px 12px; animation-delay: 0.3s;"/>
                             </svg>
                         </div>
 
