@@ -1043,36 +1043,36 @@
                 <p class="mt-3 text-gray-600 text-sm sm:text-base max-w-xl mx-auto">Temukan jawaban atas pertanyaan yang paling sering diajukan mengenai layanan dan konektivitas CJP.</p>
             </div>
 
-            <div class="space-y-4">
+            <div class="space-y-2.5 sm:space-y-4">
                 @forelse($faqs as $faq)
                 <div x-data="{ expanded: false }" 
-                     class="reveal shine-card bg-white border rounded-2xl transition-all duration-300 shadow-sm hover:shadow-md overflow-hidden"
-                     :class="expanded ? 'border-sky-300 ring-4 ring-sky-500/10 shadow-lg' : 'border-sky-100/80 hover:border-sky-200'">
+                     class="reveal shine-card bg-white border rounded-xl sm:rounded-2xl transition-all duration-300 shadow-sm hover:shadow-md overflow-hidden"
+                     :class="expanded ? 'border-sky-300 ring-2 sm:ring-4 ring-sky-500/10 shadow-lg' : 'border-sky-100/80 hover:border-sky-200'">
                     
                     <button @click="expanded = ! expanded" 
-                            class="w-full px-6 py-5 text-left font-semibold text-[color:var(--ink)] flex items-center justify-between gap-4 transition focus:outline-none group">
+                            class="w-full px-3.5 py-3 sm:px-6 sm:py-4.5 text-left font-semibold text-[color:var(--ink)] flex items-center justify-between gap-2.5 sm:gap-4 transition focus:outline-none group">
                         
-                        <div class="flex items-center gap-4 flex-1">
-                            <span class="w-9 h-9 rounded-xl flex items-center justify-center font-display font-bold text-xs shrink-0 transition-colors duration-300"
+                        <div class="flex items-center gap-2.5 sm:gap-4 flex-1">
+                            <span class="w-7 h-7 sm:w-9 sm:h-9 rounded-lg sm:rounded-xl flex items-center justify-center font-display font-bold text-[11px] sm:text-xs shrink-0 transition-colors duration-300"
                                   :class="expanded ? 'bg-gradient-to-br from-[color:var(--sky)] to-[color:var(--sky-deep)] text-white shadow-sm' : 'bg-sky-50 text-[color:var(--sky-deep)] group-hover:bg-sky-100'">
                                 Q{{ $loop->iteration }}
                             </span>
-                            <span class="font-display font-bold text-base sm:text-lg text-[color:var(--ink)] group-hover:text-[color:var(--sky-deep)] transition-colors leading-snug">
+                            <span class="font-display font-bold text-xs sm:text-sm md:text-base text-[color:var(--ink)] group-hover:text-[color:var(--sky-deep)] transition-colors leading-snug">
                                 {{ $faq->pertanyaan }}
                             </span>
                         </div>
 
-                        <div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300"
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center shrink-0 transition-all duration-300"
                              :class="expanded ? 'bg-[color:var(--sky)] text-white rotate-180 shadow-xs' : 'bg-sky-100/70 text-[color:var(--sky-deep)] group-hover:bg-sky-200/80'">
-                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                            <i class="fa-solid fa-chevron-down text-[10px] sm:text-xs"></i>
                         </div>
                     </button>
                     
                     <div x-show="expanded" x-collapse>
-                        <div class="px-6 pb-6 pt-1">
-                            <div class="p-4 sm:p-5 rounded-xl bg-gradient-to-r from-sky-50/70 via-mist/80 to-sky-50/40 border border-sky-100/80 text-gray-700 text-sm leading-relaxed flex items-start gap-3.5">
-                                <div class="w-7 h-7 rounded-lg bg-teal-500/10 text-teal-600 flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">
-                                    <i class="fa-solid fa-check text-xs"></i>
+                        <div class="px-3.5 pb-3.5 pt-0.5 sm:px-6 sm:pb-5 sm:pt-1">
+                            <div class="p-3 sm:p-4.5 rounded-lg sm:rounded-xl bg-gradient-to-r from-sky-50/70 via-mist/80 to-sky-50/40 border border-sky-100/80 text-gray-700 text-xs sm:text-sm leading-relaxed flex items-start gap-2.5 sm:gap-3.5">
+                                <div class="w-5 h-5 sm:w-6 sm:h-6 rounded-md sm:rounded-lg bg-teal-500/10 text-teal-600 flex items-center justify-center shrink-0 mt-0.5 font-bold text-[10px] sm:text-xs">
+                                    <i class="fa-solid fa-check text-[10px] sm:text-xs"></i>
                                 </div>
                                 <div class="flex-1 text-gray-700 font-medium leading-relaxed">
                                     {{ $faq->jawaban }}
