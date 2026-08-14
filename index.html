@@ -275,15 +275,15 @@
             transform: translateY(0) scale(0.98);
         }
 
-        /* Curved Floating Notch Active Navigation Indicator */
+        /* Curved Floating Notch Active Navigation Indicator (Downward for Top Navbar) */
         .nav-item-cjp {
             position: relative;
             display: inline-flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 5px 12px;
-            border-radius: 16px;
+            padding: 6px 14px;
+            border-radius: 12px;
             color: #4b5563;
             font-size: 0.8125rem;
             font-weight: 700;
@@ -292,9 +292,9 @@
         }
         .nav-item-cjp .nav-icon-bubble {
             position: absolute;
-            top: -12px;
-            width: 28px;
-            height: 28px;
+            bottom: -15px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             background: linear-gradient(135deg, var(--sky) 0%, var(--sky-deep) 100%);
             color: #ffffff;
@@ -303,11 +303,11 @@
             justify-content: center;
             font-size: 0.75rem;
             opacity: 0;
-            transform: translateY(10px) scale(0.3);
+            transform: translateY(-8px) scale(0.3);
             transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-            box-shadow: 0 4px 10px rgba(14, 165, 233, 0.4);
-            border: 2px solid #ffffff;
-            z-index: 10;
+            box-shadow: 0 6px 14px rgba(14, 165, 233, 0.45);
+            border: 2.5px solid #ffffff;
+            z-index: 20;
         }
         .nav-item-cjp .nav-text {
             position: relative;
@@ -320,10 +320,10 @@
         .nav-item-cjp.active {
             color: var(--sky-deep);
             background: rgba(41, 171, 226, 0.12);
-            border-radius: 14px;
+            border-radius: 12px 12px 18px 18px;
             box-shadow: inset 0 0 0 1px rgba(41, 171, 226, 0.25);
-            padding-top: 13px;
-            padding-bottom: 4px;
+            padding-top: 5px;
+            padding-bottom: 15px;
         }
         .nav-item-cjp.active .nav-icon-bubble {
             opacity: 1;
@@ -362,49 +362,49 @@
                 <img src="assets/cjp.png" alt="Logo PT CJP" class="h-6 sm:h-7 md:h-8 w-auto max-w-[130px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300" loading="eager">
             </a>
 
-            <!-- Desktop Menu Navigation with Dynamic Curved Floating Icon Notch Indicator -->
+            <!-- Desktop Menu Navigation with Dynamic Curved Floating Icon Notch Indicator (Downward Positioned) -->
             <div class="hidden md:flex space-x-1 lg:space-x-2 items-center font-bold text-xs lg:text-sm">
                 <a href="#beranda" class="nav-item-cjp active">
+                    <span class="nav-text">Beranda</span>
                     <span class="nav-icon-bubble">
                         <i class="fa-solid fa-house"></i>
                     </span>
-                    <span class="nav-text">Beranda</span>
                 </a>
                 <a href="#tentang" class="nav-item-cjp">
+                    <span class="nav-text">Tentang</span>
                     <span class="nav-icon-bubble">
                         <i class="fa-solid fa-building"></i>
                     </span>
-                    <span class="nav-text">Tentang</span>
                 </a>
                 <a href="#produk" class="nav-item-cjp">
+                    <span class="nav-text">Produk</span>
                     <span class="nav-icon-bubble">
                         <i class="fa-solid fa-cubes"></i>
                     </span>
-                    <span class="nav-text">Produk</span>
                 </a>
                 <a href="#portofolio" class="nav-item-cjp">
+                    <span class="nav-text">Portofolio</span>
                     <span class="nav-icon-bubble">
                         <i class="fa-solid fa-briefcase"></i>
                     </span>
-                    <span class="nav-text">Portofolio</span>
                 </a>
                 <a href="#klien" class="nav-item-cjp">
+                    <span class="nav-text">Klien</span>
                     <span class="nav-icon-bubble">
                         <i class="fa-solid fa-handshake"></i>
                     </span>
-                    <span class="nav-text">Klien</span>
                 </a>
                 <a href="#faq" class="nav-item-cjp">
+                    <span class="nav-text">FAQ</span>
                     <span class="nav-icon-bubble">
                         <i class="fa-solid fa-circle-question"></i>
                     </span>
-                    <span class="nav-text">FAQ</span>
                 </a>
                 <a href="#lokasi" class="nav-item-cjp">
+                    <span class="nav-text">Lokasi</span>
                     <span class="nav-icon-bubble">
                         <i class="fa-solid fa-location-dot"></i>
                     </span>
-                    <span class="nav-text">Lokasi</span>
                 </a>
 
                 <!-- Direct WhatsApp Button -->
