@@ -411,6 +411,80 @@
         <!-- Subtle Animated Grid Pattern Overlay -->
         <div class="absolute inset-0 pointer-events-none opacity-20" style="background-image: radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 1px); background-size: 28px 28px;"></div>
 
+        <!-- Subtle Telecom Network Mesh / Constellation Pattern Overlay -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
+            <!-- Fine Cyber Network Grid Lines -->
+            <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(to right, rgba(56, 189, 248, 0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(56, 189, 248, 0.15) 1px, transparent 1px); background-size: 52px 52px;"></div>
+            
+            <!-- Dynamic Vector Network Topologies (Interconnected Nodes & Fiber Lines) -->
+            <svg class="absolute inset-0 w-full h-full opacity-30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 800">
+                <defs>
+                    <linearGradient id="netGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+                        <stop offset="50%" stop-color="#2dd4bf" stop-opacity="0.35"/>
+                        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.1"/>
+                    </linearGradient>
+                    <linearGradient id="netGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.5"/>
+                        <stop offset="100%" stop-color="#0284c7" stop-opacity="0.15"/>
+                    </linearGradient>
+                    <filter id="glowNet" x="-20%" y="-20%" width="140%" height="140%">
+                        <feGaussianBlur stdDeviation="3" result="blur" />
+                        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                    </filter>
+                </defs>
+
+                <!-- Thin Connecting Network Lines (Top Left to Center to Right) -->
+                <g stroke="url(#netGrad1)" stroke-width="1.2" stroke-dasharray="5,4" fill="none">
+                    <line x1="70" y1="110" x2="240" y2="170" />
+                    <line x1="240" y1="170" x2="410" y2="95" />
+                    <line x1="240" y1="170" x2="180" y2="360" />
+                    <line x1="410" y1="95" x2="560" y2="220" />
+                    <line x1="180" y1="360" x2="350" y2="430" />
+                    <line x1="350" y1="430" x2="560" y2="220" />
+                    <line x1="560" y1="220" x2="740" y2="140" />
+                    <line x1="560" y1="220" x2="660" y2="400" />
+                </g>
+
+                <g stroke="url(#netGrad2)" stroke-width="1" fill="none">
+                    <line x1="740" y1="140" x2="920" y2="260" />
+                    <line x1="660" y1="400" x2="860" y2="440" />
+                    <line x1="920" y1="260" x2="860" y2="440" />
+                    <line x1="920" y1="260" x2="1120" y2="160" />
+                    <line x1="860" y1="440" x2="1080" y2="500" />
+                    <line x1="1120" y1="160" x2="1300" y2="240" />
+                    <line x1="1120" y1="160" x2="1080" y2="500" />
+                    <line x1="1080" y1="500" x2="1340" y2="420" />
+                    <line x1="1300" y1="240" x2="1340" y2="420" />
+                    <line x1="1300" y1="240" x2="1400" y2="120" />
+                </g>
+
+                <!-- Floating Network Nodes / Hubs with soft glowing dots -->
+                <g fill="#38bdf8" filter="url(#glowNet)">
+                    <circle cx="70" cy="110" r="3" />
+                    <circle cx="240" cy="170" r="4.5" fill="#2dd4bf" />
+                    <circle cx="410" cy="95" r="3.5" />
+                    <circle cx="180" cy="360" r="3" />
+                    <circle cx="350" cy="430" r="4" fill="#2dd4bf" />
+                    <circle cx="560" cy="220" r="5" fill="#38bdf8" />
+                    <circle cx="740" cy="140" r="3.5" />
+                    <circle cx="660" cy="400" r="4" fill="#2dd4bf" />
+                    <circle cx="920" cy="260" r="4.5" />
+                    <circle cx="860" cy="440" r="3.5" />
+                    <circle cx="1120" cy="160" r="5" fill="#2dd4bf" />
+                    <circle cx="1080" cy="500" r="4" />
+                    <circle cx="1300" cy="240" r="4.5" fill="#38bdf8" />
+                    <circle cx="1340" cy="420" r="3" />
+                    <circle cx="1400" cy="120" r="3.5" />
+                </g>
+
+                <!-- Signal Beacon Waves on Key Network Hubs -->
+                <circle cx="560" cy="220" r="14" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.4" class="animate-ping" style="transform-origin: 560px 220px; animation-duration: 3.5s;" />
+                <circle cx="1120" cy="160" r="14" fill="none" stroke="#2dd4bf" stroke-width="1.2" opacity="0.4" class="animate-ping" style="transform-origin: 1120px 160px; animation-duration: 4.5s;" />
+                <circle cx="240" cy="170" r="12" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.35" class="animate-ping" style="transform-origin: 240px 170px; animation-duration: 4s;" />
+            </svg>
+        </div>
+
         <!-- Ambient Glow Orbs -->
         <div class="absolute -top-32 left-1/4 w-[450px] h-[450px] bg-sky-500/20 rounded-full blur-[140px] pointer-events-none"></div>
         <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-teal-400/20 rounded-full blur-[120px] pointer-events-none"></div>
