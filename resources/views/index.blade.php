@@ -274,6 +274,65 @@
         .btn-glow:active {
             transform: translateY(0) scale(0.98);
         }
+
+        /* Curved Floating Notch Active Navigation Indicator */
+        .nav-item-cjp {
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 12px;
+            border-radius: 16px;
+            color: #4b5563;
+            font-size: 0.8125rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .nav-item-cjp .nav-icon-bubble {
+            position: absolute;
+            top: -12px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--sky) 0%, var(--sky-deep) 100%);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            opacity: 0;
+            transform: translateY(10px) scale(0.3);
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 4px 10px rgba(14, 165, 233, 0.4);
+            border: 2px solid #ffffff;
+            z-index: 10;
+        }
+        .nav-item-cjp .nav-text {
+            position: relative;
+            z-index: 5;
+            transition: all 0.3s ease;
+        }
+        .nav-item-cjp:hover {
+            color: var(--sky-deep);
+        }
+        .nav-item-cjp.active {
+            color: var(--sky-deep);
+            background: rgba(41, 171, 226, 0.12);
+            border-radius: 14px;
+            box-shadow: inset 0 0 0 1px rgba(41, 171, 226, 0.25);
+            padding-top: 13px;
+            padding-bottom: 4px;
+        }
+        .nav-item-cjp.active .nav-icon-bubble {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        .nav-item-cjp.active .nav-text {
+            font-weight: 800;
+            color: var(--sky-deep);
+        }
     </style>
 </head>
 <body class="font-sans text-[15px] leading-relaxed antialiased text-[color:var(--ink)]">
@@ -303,40 +362,54 @@
                 <img src="{{ asset('assets/cjp.png') }}" alt="Logo PT CJP" class="h-6 sm:h-7 md:h-8 w-auto max-w-[130px] sm:max-w-none object-contain group-hover:scale-105 transition-transform duration-300" loading="eager">
             </a>
 
-            <!-- Desktop Menu Navigation -->
-            <div class="hidden md:flex space-x-6 items-center font-bold text-sm">
-                <a href="#beranda" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    Beranda
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+            <!-- Desktop Menu Navigation with Dynamic Curved Floating Icon Notch Indicator -->
+            <div class="hidden md:flex space-x-1 lg:space-x-2 items-center font-bold text-xs lg:text-sm">
+                <a href="#beranda" class="nav-item-cjp active">
+                    <span class="nav-icon-bubble">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                    <span class="nav-text">Beranda</span>
                 </a>
-                <a href="#tentang" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    Tentang Kami
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                <a href="#tentang" class="nav-item-cjp">
+                    <span class="nav-icon-bubble">
+                        <i class="fa-solid fa-building"></i>
+                    </span>
+                    <span class="nav-text">Tentang</span>
                 </a>
-                <a href="#produk" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    Produk
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                <a href="#produk" class="nav-item-cjp">
+                    <span class="nav-icon-bubble">
+                        <i class="fa-solid fa-cubes"></i>
+                    </span>
+                    <span class="nav-text">Produk</span>
                 </a>
-                <a href="#portofolio" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    Portofolio
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                <a href="#portofolio" class="nav-item-cjp">
+                    <span class="nav-icon-bubble">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </span>
+                    <span class="nav-text">Portofolio</span>
                 </a>
-                <a href="#klien" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    Klien
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                <a href="#klien" class="nav-item-cjp">
+                    <span class="nav-icon-bubble">
+                        <i class="fa-solid fa-handshake"></i>
+                    </span>
+                    <span class="nav-text">Klien</span>
                 </a>
-                <a href="#faq" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    FAQ
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                <a href="#faq" class="nav-item-cjp">
+                    <span class="nav-icon-bubble">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </span>
+                    <span class="nav-text">FAQ</span>
                 </a>
-                <a href="#lokasi" class="text-gray-700 hover:text-[color:var(--sky-deep)] transition py-1 relative group">
-                    Lokasi
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[color:var(--sky)] to-[color:var(--teal)] transition-all duration-300 group-hover:w-full"></span>
+                <a href="#lokasi" class="nav-item-cjp">
+                    <span class="nav-icon-bubble">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <span class="nav-text">Lokasi</span>
                 </a>
 
                 <!-- Direct WhatsApp Button -->
-                <a href="https://wa.me/628218973458?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="btn-glow bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-5 py-2.5 rounded-full shadow-md font-bold text-xs tracking-wide flex items-center gap-2 hover:scale-105 active:scale-95 transition-all">
-                    <i class="fa-brands fa-whatsapp text-base"></i>
+                <a href="https://wa.me/628218973458?text=Halo%20PT%20Connecti%20Jelajah%20Priangan,%20saya%20ingin%20konsultasi%20layanan%20jaringan" target="_blank" rel="noopener" class="btn-glow ml-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white px-4 lg:px-5 py-2 rounded-full shadow-md font-bold text-xs tracking-wide flex items-center gap-1.5 hover:scale-105 active:scale-95 transition-all">
+                    <i class="fa-brands fa-whatsapp text-sm"></i>
                     <span>WhatsApp</span>
                 </a>
             </div>
@@ -1367,6 +1440,42 @@
 
             window.addEventListener("scroll", revealOnScroll);
             revealOnScroll(); // Trigger initial check on load
+
+            // Active Section ScrollSpy for Curved Floating Notch Navbar
+            const sections = document.querySelectorAll("section[id]");
+            const navLinks = document.querySelectorAll(".nav-item-cjp");
+
+            function updateScrollSpy() {
+                const scrollPosition = window.pageYOffset + 150;
+                let currentSection = "beranda";
+
+                sections.forEach(function (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute("id");
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        currentSection = sectionId;
+                    }
+                });
+
+                if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight - 80) {
+                    const lastSection = sections[sections.length - 1];
+                    if (lastSection) currentSection = lastSection.getAttribute("id");
+                }
+
+                navLinks.forEach(function (link) {
+                    const href = link.getAttribute("href");
+                    if (href === "#" + currentSection) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", updateScrollSpy, { passive: true });
+            updateScrollSpy();
 
             // Swiper 3D Coverflow Carousel Initialization
             if (typeof Swiper !== 'undefined') {
