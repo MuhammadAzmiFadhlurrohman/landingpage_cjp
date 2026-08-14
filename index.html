@@ -501,7 +501,7 @@
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
                         </span>
-                        <span>Anggota Tetap APJATEL — Bandung</span>
+                        <span>Anggota APJATEL — Bandung</span>
                     </div>
 
                     <!-- Streamlined Headline -->
@@ -660,7 +660,7 @@
                 </h2>
 
                 <p class="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed font-medium max-w-3xl mx-auto">
-                    <strong class="text-[color:var(--ink)]">PT Connecti Jelajah Priangan (CJP)</strong> adalah sebuah perusahaan swasta berbadan hukum di Indonesia yang berpusat di <strong class="text-[color:var(--ink)]">Bandung, Jawa Barat</strong>. Perusahaan ini bergerak di bidang penyediaan infrastruktur telekomunikasi dan jaringan, serta terdaftar resmi sebagai anggota tetap asosiasi <strong class="text-[color:var(--sky-deep)] font-extrabold">APJATEL</strong> (Asosiasi Penyelenggara Jaringan Telekomunikasi).
+                    <strong class="text-[color:var(--ink)]">PT Connecti Jelajah Priangan (CJP)</strong> adalah sebuah perusahaan swasta berbadan hukum di Indonesia yang berpusat di <strong class="text-[color:var(--ink)]">Bandung, Jawa Barat</strong>. Perusahaan ini bergerak di bidang penyediaan infrastruktur telekomunikasi, serta terdaftar resmi sebagai anggota asosiasi <strong class="text-[color:var(--sky-deep)] font-extrabold">APJATEL</strong> (Asosiasi Penyelenggara Jaringan Telekomunikasi).
                 </p>
 
                 <!-- APJATEL Official Membership Highlight Card -->
@@ -670,11 +670,11 @@
                     </div>
                     <div>
                         <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1.5">
-                            <span class="font-display font-extrabold text-base text-[color:var(--ink)]">Anggota Tetap APJATEL</span>
+                            <span class="font-display font-extrabold text-base text-[color:var(--ink)]">Anggota APJATEL</span>
                             <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-700 uppercase tracking-wider">Terdaftar Resmi</span>
                         </div>
                         <p class="text-xs sm:text-sm text-gray-600 leading-relaxed font-medium">
-                            Terdaftar resmi sebagai anggota tetap <strong class="text-gray-800">APJATEL (Asosiasi Penyelenggara Jaringan Telekomunikasi)</strong>, menjamin kehandalan jaringan, standar keselamatan kerja, serta perizinan resmi nasional.
+                            Terdaftar resmi sebagai anggota <strong class="text-gray-800">APJATEL (Asosiasi Penyelenggara Jaringan Telekomunikasi)</strong>, menjamin kehandalan jaringan, standar keselamatan kerja, serta perizinan resmi nasional.
                         </p>
                     </div>
                 </div>
