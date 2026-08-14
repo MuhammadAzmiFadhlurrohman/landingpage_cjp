@@ -1385,8 +1385,9 @@
                         slideShadows: false,
                     },
                     autoplay: {
-                        delay: 3500,
+                        delay: 2000,
                         disableOnInteraction: false,
+                        pauseOnMouseEnter: false,
                     },
                     pagination: {
                         el: '.swiper-pagination-portfolio',
