@@ -406,7 +406,7 @@
     </nav>
 
     <!-- Semi-Dark Premium Jumbotron / Hero Section -->
-    <section id="beranda" class="relative pt-28 pb-16 md:pt-36 md:pb-20 px-6 overflow-hidden border-b border-sky-900/50" style="background: linear-gradient(135deg, #06182C 0%, #0B2546 45%, #113866 80%, #081B30 100%);">
+    <section id="beranda" class="relative pt-28 pb-20 md:pt-36 md:pb-28 px-6 overflow-hidden" style="background: linear-gradient(135deg, #06182C 0%, #0B2546 45%, #113866 80%, #081B30 100%);">
         
         <!-- Subtle Animated Grid Pattern Overlay -->
         <div class="absolute inset-0 pointer-events-none opacity-20" style="background-image: radial-gradient(circle, rgba(255,255,255,0.18) 1px, transparent 1px); background-size: 28px 28px;"></div>
@@ -563,10 +563,17 @@
 
             </div>
         </div>
+
+        <!-- Hero Bottom Curved Shape Divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
+            <svg class="relative block w-full h-8 sm:h-12 md:h-16" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C150,90 350,-30 500,45 C680,125 920,15 1200,40 L1200,120 L0,120 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
     </section>
 
     <!-- Section Profil Perusahaan & Layanan Utama (Tentang Kami) -->
-    <section id="tentang" class="py-20 bg-white px-6 border-t border-sky-100 relative overflow-hidden">
+    <section id="tentang" class="py-20 bg-white px-6 relative overflow-hidden">
         <div class="container mx-auto max-w-4xl">
             <div class="reveal text-center">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-bold bg-sky-100/80 text-[color:var(--sky-deep)] border border-sky-200 shadow-2xs mb-4">
@@ -788,7 +795,14 @@
     </section>
 
     <!-- Section Portofolio Proyek -->
-    <section id="portofolio" class="relative py-24 px-4 sm:px-6 border-t border-sky-800/40 overflow-hidden" style="background: linear-gradient(135deg, #081F38 0%, #0B2A4A 40%, #11426C 75%, #1C8AC0 100%);">
+    <section id="portofolio" class="relative py-28 px-4 sm:px-6 overflow-hidden" style="background: linear-gradient(135deg, #081F38 0%, #0B2A4A 40%, #11426C 75%, #1C8AC0 100%);">
+        
+        <!-- Portofolio Top Curved Shape Divider -->
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none z-10 pointer-events-none rotate-180">
+            <svg class="relative block w-full h-8 sm:h-12 md:h-14" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C180,75 420,-20 620,40 C820,100 1020,20 1200,50 L1200,120 L0,120 Z" fill="#F4FAFD"></path>
+            </svg>
+        </div>
         <div class="absolute inset-0 pointer-events-none opacity-15" style="background-image: radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px); background-size: 24px 24px;"></div>
         <div class="absolute -top-28 -right-28 w-96 h-96 rounded-full bg-sky-500/15 blur-3xl pointer-events-none"></div>
         <div class="absolute -bottom-28 -left-28 w-96 h-96 rounded-full bg-teal-400/15 blur-3xl pointer-events-none"></div>
@@ -1221,10 +1235,17 @@
                 </div>
             </div>
         </div>
+
+        <!-- Portofolio Bottom Curved Shape Divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 pointer-events-none">
+            <svg class="relative block w-full h-8 sm:h-12 md:h-14" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 C200,80 450,10 700,60 C950,110 1100,30 1200,55 L1200,120 L0,120 Z" fill="#F4FAFD"></path>
+            </svg>
+        </div>
     </section>
 
     <!-- Section Klien Kami -->
-    <section id="klien" class="py-20 bg-mist px-6 border-t border-sky-100">
+    <section id="klien" class="py-20 bg-mist px-6">
         <div class="container mx-auto max-w-5xl">
             <div class="reveal text-center mb-12">
                 <span class="eyebrow justify-center mb-3">Kepercayaan Mitra</span>
@@ -1616,8 +1637,15 @@
         </div>
     </section>
 
+    <!-- Footer Top Shape Divider -->
+    <div class="relative w-full overflow-hidden leading-none pointer-events-none -mb-1 z-10" style="background-color: #ffffff;">
+        <svg class="relative block w-full h-8 sm:h-12 md:h-14" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C300,85 600,10 900,70 C1050,100 1150,40 1200,25 L1200,120 L0,120 Z" fill="var(--ink)"></path>
+        </svg>
+    </div>
+
     <!-- Footer Multi-Kolom -->
-    <footer class="text-gray-300 pt-16 pb-12 px-6" style="background: var(--ink);">
+    <footer class="text-gray-300 pt-12 pb-12 px-6" style="background: var(--ink);">
         <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 pb-12 border-b border-gray-800">
             
             <!-- Col 1: Brand Info -->
