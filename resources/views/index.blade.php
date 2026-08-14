@@ -771,9 +771,12 @@
 
         <div class="container mx-auto max-w-6xl relative z-10">
             <div class="reveal text-center mb-16">
-                <span class="eyebrow justify-center mb-3">Solusi & Infrastruktur</span>
-                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-[color:var(--ink)] tracking-tight">Katalog Produk Layanan</h2>
-                <p class="mt-3 text-gray-600 max-w-xl mx-auto text-sm sm:text-base font-medium">Lingkup layanan & proyek utama PT Connecti Jelajah Priangan (CJP).</p>
+                <span class="inline-flex items-center gap-2 font-display font-bold text-xs uppercase tracking-widest text-sky-200 bg-white/15 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/25 shadow-md justify-center mb-3">
+                    <span class="w-2 h-2 rounded-full bg-sky-300 animate-pulse"></span>
+                    Solusi & Infrastruktur
+                </span>
+                <h2 class="font-display text-3xl md:text-4xl font-extrabold text-white tracking-tight drop-shadow-md">Katalog Produk Layanan</h2>
+                <p class="mt-3 text-sky-100 max-w-xl mx-auto text-sm sm:text-base font-medium drop-shadow-sm">Lingkup layanan & proyek utama PT Connecti Jelajah Priangan (CJP).</p>
             </div>
 
             @php
